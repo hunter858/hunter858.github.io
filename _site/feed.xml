@@ -6,8 +6,8 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Sun, 23 Apr 2017 17:15:35 +0800</pubDate>
-    <lastBuildDate>Sun, 23 Apr 2017 17:15:35 +0800</lastBuildDate>
+    <pubDate>Sun, 23 Apr 2017 17:18:24 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Apr 2017 17:18:24 +0800</lastBuildDate>
 
     
       <item>
@@ -24,27 +24,33 @@
 
 &lt;p&gt;准备阶段：&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;charles dmg 安装包 ：&lt;a href=&quot;http://pan.baidu.com/s/1gdu0S4V&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1gdu0S4V&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;charles 破解jar 文件： &lt;a href=&quot;http://pan.baidu.com/s/1i3gjEfj&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1i3gjEfj&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;https 证书 ：&lt;a href=&quot;http://pan.baidu.com/s/1sjJiZYt&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1sjJiZYt&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;charles dmg 安装包 ：&lt;a href=&quot;http://pan.baidu.com/s/1gdu0S4V&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1gdu0S4V&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;charles 破解jar 文件： &lt;a href=&quot;http://pan.baidu.com/s/1i3gjEfj&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1i3gjEfj&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;https 证书 ：&lt;a href=&quot;http://pan.baidu.com/s/1sjJiZYt&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1sjJiZYt&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;废话不多说，开始上图&lt;/p&gt;
 
-&lt;p&gt;1.下载 必要的 dmg安装包和jar 包
-&lt;img src=&quot;/public/images/charles/1716313-8715b01927af27eb.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1下载-必要的-dmg安装包和jar-包&quot;&gt;1.下载 必要的 dmg安装包和jar 包&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-8715b01927af27eb.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;2.安装成功 出现charles app 图
-&lt;img src=&quot;/public/images/charles/1716313-f5075bb62f5576a6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2安装成功-出现charles-app-图&quot;&gt;2.安装成功 出现charles app 图&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-f5075bb62f5576a6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;3.此时不要着急打开Charles，因为jar 包还没有更换 ;&lt;/p&gt;
+&lt;h3 id=&quot;3此时不要着急打开charles因为jar-包还没有更换-&quot;&gt;3.此时不要着急打开Charles，因为jar 包还没有更换 ;&lt;/h3&gt;
 
 &lt;p&gt;找到应用程序的charles ，右键显示包内容，找到 contents\Resources\java 文件夹，将下载的 charles.jar 包 替换原来的charles.jar 包即可，替换过程如下；
 &lt;img src=&quot;/public/images/charles/1716313-58292f7e285af34e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -54,9 +60,9 @@
 &lt;p&gt;直接下载安装即可 链接：https://support.apple.com/kb/DL1572?locale=zh_CN
 &lt;img src=&quot;/public/images/charles/1716313-6fb1e3d8538fb924.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;4.如果charles 可以正常打开那就算成功了；&lt;/p&gt;
+&lt;h3 id=&quot;4如果charles-可以正常打开那就算成功了&quot;&gt;4.如果charles 可以正常打开那就算成功了；&lt;/h3&gt;
 
-&lt;p&gt;5.给手机设置代理&lt;/p&gt;
+&lt;h3 id=&quot;5给手机设置代理&quot;&gt;5.给手机设置代理&lt;/h3&gt;
 
 &lt;p&gt;（一般流程是，手机数据包-&amp;gt; 代理 -&amp;gt;互联网）&lt;/p&gt;
 
@@ -75,7 +81,7 @@
 
 &lt;p&gt;然后返回就可以了（截图如下）&lt;/p&gt;
 
-&lt;p&gt;6.现在可以抓包了（打开charles ，手机上用Sarfari随便打开一个网页 检查能否正常使用）&lt;/p&gt;
+&lt;h3 id=&quot;6现在可以抓包了打开charles-手机上用sarfari随便打开一个网页-检查能否正常使用&quot;&gt;6.现在可以抓包了（打开charles ，手机上用Sarfari随便打开一个网页 检查能否正常使用）&lt;/h3&gt;
 
 &lt;p&gt;如果所示：这里以打开百度的网页举例，选择允许才能看到抓到数据包，因为百度的首页用的https 协议，所以里面的内容被 加密了，可以通过安装证书去查看百度的数据（暂时不介绍了，俄了，再写一会儿去吃饭）&lt;/p&gt;
 
@@ -88,7 +94,7 @@
 
 &lt;p&gt;废话不多说，开始简单介绍如果抓包&lt;/p&gt;
 
-&lt;p&gt;1.以礼物说 APP 为例子（刚启动就会触发网络请求）下面时抓到的数据&lt;/p&gt;
+&lt;p&gt;####1.以礼物说 APP 为例子（刚启动就会触发网络请求）下面时抓到的数据&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-16519fdc5f7eceae.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
