@@ -6,17 +6,17 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Sun, 23 Apr 2017 17:27:49 +0800</pubDate>
-    <lastBuildDate>Sun, 23 Apr 2017 17:27:49 +0800</lastBuildDate>
+    <pubDate>Sun, 23 Apr 2017 18:10:09 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Apr 2017 18:10:09 +0800</lastBuildDate>
 
     
       <item>
-        <title>charles 抓包</title>
-        <link>http://localhost:4000/charles-%E6%8A%93%E5%8C%85</link>
+        <title>教你简单使用charles抓包</title>
+        <link>http://localhost:4000/charles</link>
         <pubDate>Mon, 11 Aug 2014 00:00:00 +0800</pubDate>
         <author></author>
-        <description>&lt;p&gt;教你简单使用charles 抓取app 里的数据（一般多为http协议）
-&lt;img src=&quot;/public/images/charles/1716313-f5075bb62f5576a6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;###教你简单使用charles 抓取app 里的数据（一般多为http协议）
+&lt;img src=&quot;/public/images/charles/1716313-0962125e914c20fe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;常用的抓包软件有很多，mac 上的charles ，wireshark 等都是不错的抓包工具，今天就简单介绍一下如何安装，如何使用（已经会的小伙伴就不要拍砖了－绕行吧）；&lt;/p&gt;
 
@@ -48,7 +48,7 @@
 &lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-8715b01927af27eb.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2安装成功-出现charles-app-图&quot;&gt;2.安装成功 出现charles app 图&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-f5075bb62f5576a6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-0962125e914c20fe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;3此时不要着急打开charles因为jar-包还没有更换-&quot;&gt;3.此时不要着急打开Charles，因为jar 包还没有更换 ;&lt;/h3&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;p&gt;注：（如果mac 没有java 环境，mac 会有一个提示，去apple 官网上下载java ）如图：&lt;/p&gt;
 
-&lt;p&gt;直接下载安装即可 链接：https://support.apple.com/kb/DL1572?locale=zh_CN
+&lt;p&gt;直接下载安装即可 链接：&lt;a href=&quot;https://support.apple.com/kb/DL1572?locale=zh_CN&quot;&gt;https://support.apple.com/kb/DL1572?locale=zh_CN&lt;/a&gt;
 &lt;img src=&quot;/public/images/charles/1716313-6fb1e3d8538fb924.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;4如果charles-可以正常打开那就算成功了&quot;&gt;4.如果charles 可以正常打开那就算成功了；&lt;/h3&gt;
@@ -96,7 +96,7 @@
 
 &lt;p&gt;####1.以礼物说 APP 为例子（刚启动就会触发网络请求）下面时抓到的数据&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-16519fdc5f7eceae.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-8f54bb8bf76611be.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;今天就讲到这吧，好饿……&lt;/p&gt;
 
@@ -109,11 +109,10 @@
     
       <item>
         <title>最常见的20个jQuery 面试问题及答案</title>
-        <link>http://localhost:4000/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84-20-%E4%B8%AA-jQuery-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88</link>
+        <link>http://localhost:4000/javascpity-interview</link>
         <pubDate>Sat, 08 Mar 2014 00:00:00 +0800</pubDate>
         <author></author>
-        <description>&lt;h1 id=&quot;最常见的-20-个-jquery-面试问题及答案&quot;&gt;最常见的 20 个 jQuery 面试问题及答案&lt;/h1&gt;
-&lt;p&gt;毫无疑问，jQuery给了JavaScript急需的提振，这是一门如此有用，但同时总是常常被低估的语言. 在 jQuery 粉墨登场之前，我们曾经会写出冗长的JavaScript代码，不仅仅为更大型的应用程序，有时即使是更小的应用程序也要如此. 那种代码常常是既难以阅读又难以维护的.&lt;/p&gt;
+        <description>&lt;p&gt;毫无疑问，jQuery给了JavaScript急需的提振，这是一门如此有用，但同时总是常常被低估的语言. 在 jQuery 粉墨登场之前，我们曾经会写出冗长的JavaScript代码，不仅仅为更大型的应用程序，有时即使是更小的应用程序也要如此. 那种代码常常是既难以阅读又难以维护的.&lt;/p&gt;
 
 &lt;p&gt;在使用这个优秀的库之前写过原生的JavaScript，仅仅在用过它的一个月之后，我就能意识到jQuery的真正力量. 鉴于它的巨大人气，有关jQuery的面试问题，以及有关HTML和JavaScript的数量在任何web开发者面试中有所增加. 因为 jQuery 相对较新，大多数面试所涉及的问题都是围绕核心的 jQuery 库的，包括选择器, DOM 操作 以及 jQuery 基础.&lt;/p&gt;
 
@@ -336,7 +335,7 @@ $(‘.active’) // Returns all elements with CSS class active.
     
       <item>
         <title>ReactiveCocoa常见操作方法介绍</title>
-        <link>http://localhost:4000/ReactiveCocoa-+-MVVM-%E5%AE%9E%E6%88%98%E4%B8%80</link>
+        <link>http://localhost:4000/RAC</link>
         <pubDate>Thu, 06 Mar 2014 00:00:00 +0800</pubDate>
         <author></author>
         <description>&lt;p&gt;#1.ReactiveCocoa常见操作方法介绍。&lt;/p&gt;
@@ -1231,8 +1230,8 @@ PS:VIPER架构思想&lt;/p&gt;
       </item>
     
       <item>
-        <title>前端开发必看的14本书 pengchao</title>
-        <link>http://localhost:4000/text2</link>
+        <title>前端开发必看的14本书</title>
+        <link>http://localhost:4000/web-read-book</link>
         <pubDate>Wed, 05 Mar 2014 00:00:00 +0800</pubDate>
         <author></author>
         <description>&lt;p&gt;在学习web开发的过程中，实践是出真知的有力武器，但在逻辑思维的训练和撸代码的实践过程中，书籍无疑是最有力的参考工具。以下是学习前端各个阶段所需要的14本经典书目，前端小伙伴，赶紧收好！&lt;/p&gt;
