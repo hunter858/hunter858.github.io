@@ -6,9 +6,100 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Sun, 23 Apr 2017 16:18:19 +0800</pubDate>
-    <lastBuildDate>Sun, 23 Apr 2017 16:18:19 +0800</lastBuildDate>
+    <pubDate>Sun, 23 Apr 2017 17:12:51 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Apr 2017 17:12:51 +0800</lastBuildDate>
 
+    
+      <item>
+        <title>Charles 抓包</title>
+        <link>http://localhost:4000/charles-%E6%8A%93%E5%8C%85</link>
+        <pubDate>Mon, 11 Aug 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;教你简单使用charles 抓取app 里的数据（一般多为http协议）
+&lt;img src=&quot;/public/images/charles/1716313-f5075bb62f5576a6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;常用的抓包软件有很多，mac 上的charles ，wireshark 等都是不错的抓包工具，今天就简单介绍一下如何安装，如何使用（已经会的小伙伴就不要拍砖了－绕行吧）；&lt;/p&gt;
+
+&lt;p&gt;chareles 只适用于抓取http协议的报文；&lt;/p&gt;
+
+&lt;p&gt;准备阶段：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;charles dmg 安装包 ：&lt;a href=&quot;http://pan.baidu.com/s/1gdu0S4V&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1gdu0S4V&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;charles 破解jar 文件： &lt;a href=&quot;http://pan.baidu.com/s/1i3gjEfj&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1i3gjEfj&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;https 证书 ：&lt;a href=&quot;http://pan.baidu.com/s/1sjJiZYt&quot; title=&quot;Title&quot;&gt;http://pan.baidu.com/s/1sjJiZYt&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;废话不多说，开始上图&lt;/p&gt;
+
+&lt;p&gt;1.下载 必要的 dmg安装包和jar 包
+&lt;img src=&quot;/public/images/charles/1716313-8715b01927af27eb.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2.安装成功 出现charles app 图
+&lt;img src=&quot;/public/images/charles/1716313-f5075bb62f5576a6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3.此时不要着急打开Charles，因为jar 包还没有更换 ;&lt;/p&gt;
+
+&lt;p&gt;找到应用程序的charles ，右键显示包内容，找到 contents\Resources\java 文件夹，将下载的 charles.jar 包 替换原来的charles.jar 包即可，替换过程如下；
+&lt;img src=&quot;/public/images/charles/1716313-58292f7e285af34e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;注：（如果mac 没有java 环境，mac 会有一个提示，去apple 官网上下载java ）如图：&lt;/p&gt;
+
+&lt;p&gt;直接下载安装即可 链接：https://support.apple.com/kb/DL1572?locale=zh_CN
+&lt;img src=&quot;/public/images/charles/1716313-6fb1e3d8538fb924.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4.如果charles 可以正常打开那就算成功了；&lt;/p&gt;
+
+&lt;p&gt;5.给手机设置代理&lt;/p&gt;
+
+&lt;p&gt;（一般流程是，手机数据包-&amp;gt; 代理 -&amp;gt;互联网）&lt;/p&gt;
+
+&lt;p&gt;理论：讲更通俗一点就是，电脑和手机在统一wifi下，也就是所谓的局域网内，将手机的代理指向电脑 ，然后电脑将手机发给它的数据包交给互联网，电脑将从互联网上拿到的数据包，再传递给手机 （我好像比较废话😢）&lt;/p&gt;
+
+&lt;p&gt;获取代理服务器的ip（也就是装charles 的电脑IP）&lt;/p&gt;
+
+&lt;p&gt;在 系统便好设置 -&amp;gt;网络 里可以看到  （此时我的是 192.168.1.101）
+&lt;img src=&quot;/public/images/charles/1716313-3853401c334a952f.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;再拿到手机，找到 无限局域网 -&amp;gt; 已连接的wifi-&amp;gt;  HTTP 代理-&amp;gt;手动  设置 服务器ip 地址 192.168.1.101 （填写装了charles 的那台电脑的ip地址）&lt;/p&gt;
+
+&lt;p&gt;端口  填写8888 （端口用于识别哪个服务器，charles 使用了8888 端口）&lt;/p&gt;
+
+&lt;p&gt;鉴定按钮（暂时不选）&lt;/p&gt;
+
+&lt;p&gt;然后返回就可以了（截图如下）&lt;/p&gt;
+
+&lt;p&gt;6.现在可以抓包了（打开charles ，手机上用Sarfari随便打开一个网页 检查能否正常使用）&lt;/p&gt;
+
+&lt;p&gt;如果所示：这里以打开百度的网页举例，选择允许才能看到抓到数据包，因为百度的首页用的https 协议，所以里面的内容被 加密了，可以通过安装证书去查看百度的数据（暂时不介绍了，俄了，再写一会儿去吃饭）&lt;/p&gt;
+
+&lt;p&gt;截图如下：
+&lt;img src=&quot;/public/images/charles/1716313-d2297dc51159b5cf.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;简单介绍 了一下安装，如果不清楚的话，可以看这位先生写的博客，很详细，安装包也是他提供的&lt;/p&gt;
+
+&lt;p&gt;http://blog.csdn.net/jiangwei0910410003/article/details/41620363&lt;/p&gt;
+
+&lt;p&gt;废话不多说，开始简单介绍如果抓包&lt;/p&gt;
+
+&lt;p&gt;1.以礼物说 APP 为例子（刚启动就会触发网络请求）下面时抓到的数据&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/charles/1716313-16519fdc5f7eceae.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;今天就讲到这吧，好饿……&lt;/p&gt;
+
+&lt;p&gt;其他功能的话，可以自己多点击试试，比如拿到get 请求的URL ，或者查看post 请求头的参数， Content-Type 等参数
+&lt;img src=&quot;/public/images/charles/1716313-3c4466ab10bd6a31.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你想看tcp／ip 三次握手，四次断开，或者更详细的数据包交互的过程，建议使用一下wireShark ，当然这个软件使用起来也更麻烦一些，还有一本专门介绍如果使用wireShark 的书；&lt;/p&gt;
+</description>
+      </item>
     
       <item>
         <title>前端学习指南</title>
