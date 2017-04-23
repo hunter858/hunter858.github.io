@@ -1,1 +1,14 @@
-theme: jekyll-theme-slate
+
+title: Brume
+author: Aigars Dzerviniks
+description: It's simple. It's easy to use. It's a Jekyll theme.
+
+highlighter: null
+permalink: /:title
+
+url:
+baseurl:
+
+sass:
+  sass_dir: public/css
+  style: :compressed
