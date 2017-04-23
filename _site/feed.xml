@@ -6,12 +6,12 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Sun, 23 Apr 2017 17:18:24 +0800</pubDate>
-    <lastBuildDate>Sun, 23 Apr 2017 17:18:24 +0800</lastBuildDate>
+    <pubDate>Sun, 23 Apr 2017 17:27:49 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Apr 2017 17:27:49 +0800</lastBuildDate>
 
     
       <item>
-        <title>Charles 抓包</title>
+        <title>charles 抓包</title>
         <link>http://localhost:4000/charles-%E6%8A%93%E5%8C%85</link>
         <pubDate>Mon, 11 Aug 2014 00:00:00 +0800</pubDate>
         <author></author>
@@ -108,7 +108,7 @@
       </item>
     
       <item>
-        <title>前端学习指南</title>
+        <title>最常见的20个jQuery 面试问题及答案</title>
         <link>http://localhost:4000/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84-20-%E4%B8%AA-jQuery-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88</link>
         <pubDate>Sat, 08 Mar 2014 00:00:00 +0800</pubDate>
         <author></author>
@@ -1231,8 +1231,8 @@ PS:VIPER架构思想&lt;/p&gt;
       </item>
     
       <item>
-        <title>前端开发必看的14本书</title>
-        <link>http://localhost:4000/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%BF%85%E7%9C%8B%E7%9A%8414%E6%9C%AC%E4%B9%A6</link>
+        <title>前端开发必看的14本书 pengchao</title>
+        <link>http://localhost:4000/text2</link>
         <pubDate>Wed, 05 Mar 2014 00:00:00 +0800</pubDate>
         <author></author>
         <description>&lt;p&gt;在学习web开发的过程中，实践是出真知的有力武器，但在逻辑思维的训练和撸代码的实践过程中，书籍无疑是最有力的参考工具。以下是学习前端各个阶段所需要的14本经典书目，前端小伙伴，赶紧收好！&lt;/p&gt;
