@@ -1,0 +1,1253 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <description></description>
+    <language>en-us</language>
+    <pubDate>Sun, 23 Apr 2017 16:18:19 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Apr 2017 16:18:19 +0800</lastBuildDate>
+
+    
+      <item>
+        <title>前端学习指南</title>
+        <link>http://localhost:4000/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84-20-%E4%B8%AA-jQuery-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88</link>
+        <pubDate>Sat, 08 Mar 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;h1 id=&quot;最常见的-20-个-jquery-面试问题及答案&quot;&gt;最常见的 20 个 jQuery 面试问题及答案&lt;/h1&gt;
+&lt;p&gt;毫无疑问，jQuery给了JavaScript急需的提振，这是一门如此有用，但同时总是常常被低估的语言. 在 jQuery 粉墨登场之前，我们曾经会写出冗长的JavaScript代码，不仅仅为更大型的应用程序，有时即使是更小的应用程序也要如此. 那种代码常常是既难以阅读又难以维护的.&lt;/p&gt;
+
+&lt;p&gt;在使用这个优秀的库之前写过原生的JavaScript，仅仅在用过它的一个月之后，我就能意识到jQuery的真正力量. 鉴于它的巨大人气，有关jQuery的面试问题，以及有关HTML和JavaScript的数量在任何web开发者面试中有所增加. 因为 jQuery 相对较新，大多数面试所涉及的问题都是围绕核心的 jQuery 库的，包括选择器, DOM 操作 以及 jQuery 基础.&lt;/p&gt;
+
+&lt;p&gt;在本篇文章中，我要向 HTML 和 JavaScript 开发人员分享 20 个在不同面试遇到的 jQuery 问题。这里面的一些问题也许同样会在那些要求同时进行服务端(Spring，Servlet 和 JSP)和客户端(HTML，CSS，JavaScript 和 jQuery)的开发 Java Web 开发面试中涉及。&lt;/p&gt;
+
+&lt;p&gt;如果你正要去面试一个职位，它需要你拥有多项技能，比如：Java、jQuery，它并不是希望你明白jQuery每一个细微的细节，或对其有全面的了解，但是如果你是要面试一个真正的客户端开发职位，你就需要积累更多高级的有技巧性的jQuery问题，而不限于本文列举的这些问题。不过，你可以通过本文来快速的温习那些jQuery面试中经常被提到的问题，而且它们大多也适用于有2到5年经验的web开发人员，特别是Java领域。&lt;/p&gt;
+
+&lt;p&gt;##jQuery 面试问题和答案&lt;/p&gt;
+
+&lt;p&gt;JavaScript 是客户端脚本的标准语言，而 jQuery 使得编写 JavaScript 更加简单。你可以只用写几行的jQuery 代码就能实现更多的东西. 它是最常被用到的 JavaScript 库之一，并且现在已经很少有不用jQuery 而使用原生 JavaScript 的新项目了。这对于作为一个 Java web 开发者的你而言意味着你会在一场Java web开发面试中发现许多jQuery的面试问题.&lt;/p&gt;
+
+&lt;p&gt;早些时候，绝大部分都是 HTTP, HTML, CSS 以及 JavaScript，但最近开始，除了 JavaScript 基础之外，人们也希望知道你是否熟悉 jQuery。这16个jQuery的问题是为web开发者准备的，且也能够非常方便你在参加一次电话或者视频一轮的面试之前纠正一些关键的概念。如果你是  jQuery 新手，那么它也能够帮助你更加好的理解基础知识，并激励你去发现更多东西。&lt;/p&gt;
+
+&lt;h2 id=&quot;1-jquery-库中的--是什么答案如下&quot;&gt;###1. jQuery 库中的 $() 是什么？（答案如下）&lt;/h2&gt;
+&lt;p&gt;$() 函数是 jQuery() 函数的别称，乍一看这很怪异，还使 jQuery 代码晦涩难懂。一旦你适应了，你会爱上它的简洁。$() 函数用于将任何对象包裹成 jQuery 对象，接着你就被允许调用定义在 jQuery 对象上的多个不同方法。你甚至可以将一个选择器字符串传入 $() 函数，它会返回一个包含所有匹配的 DOM 元素数组的 jQuery 对象。这个问题我已经见过好几次被提及，尽管它非常基础，它经常被用来区分一个开发人员是否了解 jQuery。&lt;/p&gt;
+
+&lt;h2 id=&quot;2-网页上有-5-个&quot;&gt;###2. 网页上有 5 个&lt;/h2&gt;
+&lt;p&gt;元素，如何使用 jQuery来选择它们？（答案）&lt;/p&gt;
+
+&lt;p&gt;另一个重要的 jQuery 问题是基于选择器的。jQuery 支持不同类型的选择器，例如 ID 选择器、class 选择器、标签选择器。鉴于这个问题没提到 ID 和 class，你可以用标签选择器来选择所有的 div 元素。jQuery 代码：$(“div”)，这样会返回一个包含所有 5 个 div 标签的 jQuery 对象。更详细的解答参见上面链接的文章。&lt;/p&gt;
+
+&lt;h2 id=&quot;3-jquery-里的-id-选择器和-class-选择器有何不同答案&quot;&gt;###3. jQuery 里的 ID 选择器和 class 选择器有何不同？（答案）&lt;/h2&gt;
+
+&lt;p&gt;如果你用过 CSS，你也许就知道 ID 选择器和 class 选择器之间的差异，jQuery 也同样如此。ID 选择器使用 ID 来选择元素，比如 #element1，而 class 选择器使用 CSS class 来选择元素。当你只需要选择一个元素时，使用 ID 选择器，而如果你想要选择一组具有相同 CSS class 的元素，就要用 class 选择器。在面试过程中，你有很大几率会被要求使用 ID 选择器和 class 选择器来写代码。下面的 jQuery 代码使用了 ID 选择器和 class 选择器：&lt;/p&gt;
+
+&lt;p&gt;$(‘#LoginTextBox’)  // Returns element wrapped as jQuery object with id=’LoginTextBox’
+$(‘.active’) // Returns all elements with CSS class active.
+正如你所见，从语法角度来说，ID 选择器和 class 选择器的另一个不同之处是，前者用字符”#”而后者用字符”.”。更详细的分析和讨论参见上面的答案链接。&lt;/p&gt;
+
+&lt;h2 id=&quot;4-如何在点击一个按钮时使用-jquery-隐藏一个图片&quot;&gt;###4. 如何在点击一个按钮时使用 jQuery 隐藏一个图片？&lt;/h2&gt;
+
+&lt;p&gt;这是一个事件处理问题。jQuery为按钮点击之类的事件提供了很好的支持。你可以通过以下代码去隐藏一个通过ID或class定位到的图片。你需要知道如何为按钮设置事件并执行hide() 方法，代码如下所示：&lt;/p&gt;
+
+&lt;p&gt;$(‘#ButtonToClick’).click(function(){
+    $(‘#ImageToHide’).hide();
+});
+我喜欢这个问题，因为很贴近实际使用，代码也不复杂。&lt;/p&gt;
+
+&lt;h2 id=&quot;5--documentready-是个什么函数为什么要用它answer&quot;&gt;###5.  $(document).ready() 是个什么函数？为什么要用它？(answer)&lt;/h2&gt;
+
+&lt;p&gt;这个问题很重要，并且常常被问到。 ready() 函数用于在文档进入ready状态时执行代码。当DOM 完全加载（例如HTML被完全解析DOM树构建完成时），jQuery允许你执行代码。使用$(document).ready()的最大好处在于它适用于所有浏览器，jQuery帮你解决了跨浏览器的难题。需要进一步了解的用户可以点击 answer链接查看详细讨论。&lt;/p&gt;
+
+&lt;h2 id=&quot;6-javascript-windowonload-事件和-jquery-ready-函数有何不同答案&quot;&gt;###6. JavaScript window.onload 事件和 jQuery ready 函数有何不同？（答案）&lt;/h2&gt;
+
+&lt;p&gt;这个问答是紧接着上一个的。JavaScript window.onload 事件和 jQuery ready 函数之间的主要区别是，前者除了要等待 DOM 被创建还要等到包括大型图片、音频、视频在内的所有外部资源都完全加载。如果加载图片和媒体内容花费了大量时间，用户就会感受到定义在 window.onload 事件上的代码在执行时有明显的延迟。&lt;/p&gt;
+
+&lt;p&gt;另一方面，jQuery ready() 函数只需对 DOM 树的等待，而无需对图像或外部资源加载的等待，从而执行起来更快。使用 jQuery $(document).ready() 的另一个优势是你可以在网页里多次使用它，浏览器会按它们在 HTML 页面里出现的顺序执行它们，相反对于 onload 技术而言，只能在单一函数里使用。鉴于这个好处，用 jQuery ready() 函数比用 JavaScript window.onload 事件要更好些。&lt;/p&gt;
+
+&lt;h2 id=&quot;7-如何找到所有-html-select-标签的选中项答案如下&quot;&gt;###7. 如何找到所有 HTML select 标签的选中项？（答案如下）&lt;/h2&gt;
+
+&lt;p&gt;这是面试里比较棘手的 jQuery 问题之一。这是个基础的问题，但是别期望每个 jQuery 初学者都知道它。你能用下面的 jQuery 选择器获取所有具备 multiple=true 的 select 标签的选中项：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	$('[name=NameOfSelectedTag] :selected') 这段代码结合使用了属性选择器和 :selected 选择器，结果只返回被选中的选项。你可按需修改它，比如用 id 属性而不是 name 属性来获取select标签。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;8-jquery-里的-each-是什么函数你是如何使用它的答案如下&quot;&gt;###8. jQuery 里的 each() 是什么函数？你是如何使用它的？（答案如下）&lt;/h2&gt;
+
+&lt;p&gt;each() 函数就像是 Java 里的一个 Iterator，它允许你遍历一个元素集合。你可以传一个函数给 each() 方法，被调用的 jQuery 对象会在其每个元素上执行传入的函数。有时这个问题会紧接着上面一个问题，举个例子，如何在 alert 框里显示所有选中项。我们可以用上面的选择器代码找出所有选中项，然后我们在 alert 框中用 each() 方法来一个个打印它们，代码如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ('[name=NameOfSelectedTag] :selected').each(function(selected) {
+    alert($(selected).text());
+}); 其中 text() 方法返回选项的文本。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;9-你是如何将一个-html-元素添加到-dom-树中的答案如下&quot;&gt;###9. 你是如何将一个 HTML 元素添加到 DOM 树中的？（答案如下）&lt;/h2&gt;
+
+&lt;p&gt;你可以用 jQuery 方法 appendTo() 将一个 HTML 元素添加到 DOM 树中。这是 jQuery 提供的众多操控 DOM 的方法中的一个。你可以通过 appendTo() 方法在指定的 DOM 元素末尾添加一个现存的元素或者一个新的 HTML 元素。&lt;/p&gt;
+
+&lt;h2 id=&quot;10-你能用-jquery-代码选择所有在段落内部的超链接吗答案略&quot;&gt;###10. 你能用 jQuery 代码选择所有在段落内部的超链接吗？（答案略）&lt;/h2&gt;
+
+&lt;p&gt;这是另一个关于选择器的 jQuery 面试题。就像其他问题那样，只需一行 jQuery 代码就能搞定。你可以使用下面这个 jQuery 代码片段来选择所有嵌套在段落（&lt;/p&gt;
+
+&lt;p&gt;标签）内部的超链接（a标签）……&lt;/p&gt;
+
+&lt;h2 id=&quot;11-this-和-this-关键字在-jquery-中有何不同答案如下&quot;&gt;###11. $(this) 和 this 关键字在 jQuery 中有何不同？（答案如下）&lt;/h2&gt;
+
+&lt;p&gt;这对于很多 jQuery 初学者来说是一个棘手的问题，其实是个简单的问题。$(this) 返回一个 jQuery 对象，你可以对它调用多个 jQuery 方法，比如用 text() 获取文本，用val() 获取值等等。而 this 代表当前元素，它是 JavaScript 关键词中的一个，表示上下文中的当前 DOM 元素。你不能对它调用 jQuery 方法，直到它被 $() 函数包裹，例如 $(this)。&lt;/p&gt;
+
+&lt;h2 id=&quot;12-你如何使用jquery来提取一个html-标记的属性-例如-链接的href-答案&quot;&gt;###12. 你如何使用jQuery来提取一个HTML 标记的属性 例如. 链接的href? (答案)&lt;/h2&gt;
+
+&lt;p&gt;attr() 方法被用来提取任意一个HTML元素的一个属性的值. 你首先需要利用jQuery选择及选取到所有的链接或者一个特定的链接，然后你可以应用attr()方法来获得他们的href属性的值。下面的代码会找到页面中所有的链接并返回href值：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	$('a').each(function(){
+  		 alert($(this).attr('href'));
+	}); ###13. 你如何使用jQuery设置一个属性值? (答案) -----------------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;前面这个问题之后额外的一个后续问题是，attr()方法和jQuery中的其它方法一样，能力不止一样. 如果你在调用attr()的同时带上一个值 例如. attr(name, value), 这里name是属&lt;/p&gt;
+
+&lt;h2 id=&quot;14-jquery中-detach-和-remove-方法的区别是什么-答案&quot;&gt;###14. jQuery中 detach() 和 remove() 方法的区别是什么? (答案)&lt;/h2&gt;
+
+&lt;p&gt;尽管 detach() 和 remove() 方法都被用来移除一个DOM元素, 两者之间的主要不同在于 detach() 会保持对过去被解除元素的跟踪, 因此它可以被取消解除, 而 remove() 方法则会保持过去被移除对象的引用. 你也还可以看看 用来向DOM中添加元素的 appendTo() 方法.&lt;/p&gt;
+
+&lt;h3 id=&quot;15-你如何利用jquery来向一个元素中添加和移除css类-答案&quot;&gt;15. 你如何利用jQuery来向一个元素中添加和移除CSS类? (答案)&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;通过利用 addClass() 和 removeClass() 这两个 jQuery 方法。动态的改变元素的class属性可以很简单例如. 使用类“.active”来标记它们的未激活和激活状态，等等.&lt;/p&gt;
+
+&lt;h3 id=&quot;16-使用-cdn-加载-jquery-库的主要优势是什么--答案&quot;&gt;16. 使用 CDN 加载 jQuery 库的主要优势是什么 ? (答案)&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;这是一个稍微高级点儿的jQuery问题。好吧，除了报错节省服务器带宽以及更快的下载速度这许多的好处之外, 最重要的是，如果浏览器已经从同一个CDN下载类相同的 jQuery 版本, 那么它就不会再去下载它一次. 因此今时今日，许多公共的网站都将jQuery用于用户交互和动画, 如果浏览器已经有了下载好的jQuery库，网站就能有非常好的展示机会。&lt;/p&gt;
+
+&lt;h3 id=&quot;17--jqueryget-和-jqueryajax-方法之间的区别是什么&quot;&gt;17.  jQuery.get() 和 jQuery.ajax() 方法之间的区别是什么?&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;ajax() 方法更强大，更具可配置性, 让你可以指定等待多久，以及如何处理错误。get() 方法是一个只获取一些数据的专门化方法。&lt;/p&gt;
+
+&lt;h3 id=&quot;18-jquery-中的方法链是什么使用方法链有什么好处&quot;&gt;18. jQuery 中的方法链是什么？使用方法链有什么好处？&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;方法链是对一个方法返回的结果调用另一个方法，这使得代码简洁明了，同时由于只对 DOM 进行了一轮查找，性能方面更加出色。&lt;/p&gt;
+
+&lt;h3 id=&quot;19-你要是在一个-jquery-事件处理程序里返回了-false-会怎样&quot;&gt;19. 你要是在一个 jQuery 事件处理程序里返回了 false 会怎样？&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;这通常用于阻止事件向上冒泡。&lt;/p&gt;
+
+&lt;h3 id=&quot;20-哪种方式更高效documentgetelementbyidmyid-还是-myid&quot;&gt;20. 哪种方式更高效：document.getElementbyId(“myId”) 还是 $(“#myId”)？&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;第一种，因为它直接调用了 JavaScript 引擎。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Demo post</title>
+        <link>http://localhost:4000/demo-post</link>
+        <pubDate>Fri, 07 Mar 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;Praesent tincidunt vestibulum sem nec eleifend. Pellentesque adipiscing mollis adipiscing. Sed ipsum sem, eleifend eget dapibus in, tincidunt ut dolor. Curabitur gravida urna leo, eget auctor turpis feugiat non. Vivamus pharetra, lorem id ullamcorper rutrum, eros erat condimentum erat, ac dignissim lorem nisi nec nunc. Praesent tellus mi, volutpat quis nisl et, consectetur blandit nibh.&lt;/p&gt;
+
+&lt;p&gt;Nulla sit amet nulla non odio sodales mollis elementum sed sem. Aenean et laoreet enim. Curabitur vulputate, mi rutrum commodo condimentum, enim nunc feugiat magna, vel rutrum sapien ante nec ante. Donec nec nibh placerat, molestie felis ac, vulputate arcu. Donec condimentum pellentesque nibh vel tincidunt. Fusce sem ipsum, varius at laoreet vitae, accumsan sed nisl. Nunc eget viverra diam. Aliquam pulvinar, enim id commodo tincidunt, risus lectus pharetra lacus, et semper enim ligula ut mauris. Sed vitae sollicitudin ante. In sollicitudin placerat dui et sagittis.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas leo id tortor feugiat, sit amet cursus diam mollis. Nunc sit amet tellus est. Nunc lacus nisl, gravida ut aliquam vel, molestie eget odio. Nulla facilisi. Ut sed libero pharetra nunc volutpat hendrerit. Mauris eget mi adipiscing, congue tellus ut, scelerisque eros. Phasellus ullamcorper dictum tellus nec pretium.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Integer molestie orci ante, nec dictum metus aliquam ut. Donec id tristique enim. Quisque tellus est, dignissim ut justo ac, volutpat fringilla mi. Duis ultricies nec sapien vitae blandit. &lt;strong&gt;Suspendisse sed est mi&lt;/strong&gt;. Mauris varius sapien vel nulla accumsan, id tincidunt ipsum ultrices. Sed eget magna mauris. Etiam porttitor lacus ullamcorper lacus tincidunt aliquam. Sed feugiat congue fringilla. Nunc velit diam, vulputate sed metus vitae, iaculis tempor arcu. Proin consectetur a erat in dignissim.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tables&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 3 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Pellentesque adipiscing mollis adipiscing.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nulla sit amet nulla non odio sodales mollis elementum sed sem.&lt;/li&gt;
+  &lt;li&gt;Donec id tristique enim. Quisque tellus est, dignissim ut justo ac, volutpat fringilla mi.&lt;/li&gt;
+  &lt;li&gt;Nam luctus erat dolor, non viverra nulla varius at.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Curabitur nec ullamcorper dui, blandit aliquet ipsum. Integer suscipit odio quis eros fermentum auctor. Sed tincidunt quam eleifend, egestas erat vulputate, tincidunt metus. Maecenas gravida sodales mi nec posuere. Cras vel nisi condimentum, hendrerit lacus sed, scelerisque ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc convallis vestibulum erat, quis porta tellus. &lt;em&gt;In lorem erat, sollicitudin varius posuere id, molestie ac eros&lt;/em&gt;. Fusce luctus tellus vitae vulputate venenatis. Sed scelerisque bibendum interdum. Sed pretium commodo ultrices. Fusce luctus quam id porttitor vulputate. Integer ornare consectetur diam eget rutrum. Etiam eget sapien metus.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Ornare&lt;/dt&gt;
+  &lt;dd&gt;Cras vel nisi condimentum, hendrerit lacus sed, scelerisque ipsum.&lt;/dd&gt;
+  &lt;dt&gt;Convallis&lt;/dt&gt;
+  &lt;dd&gt;In lorem erat, sollicitudin varius posuere id, molestie ac eros&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Proin at libero id lorem fermentum elementum quis eget est.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Nam bibendum turpis massa, at accumsan justo fermentum ac.&lt;/li&gt;
+  &lt;li&gt;Nulla non nulla ut ante condimentum mattis vel at lectus.&lt;/li&gt;
+  &lt;li&gt;Etiam eget tortor tincidunt, iaculis ligula a, tristique massa. Fusce sed congue lorem, interdum sodales nisl.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Etiam consequat euismod ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla pellentesque ipsum vulputate, pellentesque nisl vitae, lacinia sem. Praesent auctor felis et odio ultrices, nec tempor elit lobortis. Etiam ornare massa non risus luctus, id iaculis lacus egestas. Pellentesque massa dolor, mattis id lobortis eget, tristique vitae est.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Nam vulputate leo vitae libero vehicula, id tincidunt velit malesuada. In vel ornare nisi, id semper turpis. Vivamus erat elit, venenatis quis dui at, convallis suscipit sapien. Nunc in nisi scelerisque, aliquam mauris porttitor, facilisis ligula. Vestibulum cursus erat ac turpis bibendum, id pulvinar dolor dapibus. Proin vitae justo et velit imperdiet ultrices id id odio. Cras adipiscing ante vel mauris lobortis rutrum. Aenean eu felis est. In lacinia porttitor risus non sagittis.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Greeter&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;greet&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;john&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Greeter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Hello, World&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;john&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;greet&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sed imperdiet interdum ultrices. Phasellus iaculis porttitor lorem nec scelerisque. Suspendisse eros urna, adipiscing vel luctus at, feugiat sit amet arcu. Aliquam porttitor ut urna pellentesque sagittis. Donec pellentesque venenatis diam sit amet cursus. Etiam luctus, metus quis gravida fermentum, tortor arcu consequat metus, eget viverra augue risus ac dui. Fusce faucibus scelerisque quam eu sagittis. Sed sit amet sapien non augue lobortis adipiscing. Sed sagittis at lectus eu tempus. Nulla non nulla ut ante condimentum mattis vel at lectus. Nulla ultricies dui et urna semper ultrices. Sed neque ante, dictum in dignissim luctus, facilisis ornare odio. Aenean tempor ultrices magna non pharetra. Curabitur vulputate nec est aliquet suscipit. Etiam ipsum sapien, dictum quis tristique vel, pretium at elit.&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>ReactiveCocoa常见操作方法介绍</title>
+        <link>http://localhost:4000/ReactiveCocoa-+-MVVM-%E5%AE%9E%E6%88%98%E4%B8%80</link>
+        <pubDate>Thu, 06 Mar 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;#1.ReactiveCocoa常见操作方法介绍。&lt;/p&gt;
+
+&lt;h3 id=&quot;11-reactivecocoa操作须知&quot;&gt;1.1 ReactiveCocoa操作须知&lt;/h3&gt;
+
+&lt;p&gt;所有的信号（RACSignal）都可以进行操作处理，因为所有操作方法都定义在RACStream.h中，因此只要继承RACStream就有了操作处理方法。&lt;/p&gt;
+&lt;h3 id=&quot;12-reactivecocoa操作思想&quot;&gt;1.2 ReactiveCocoa操作思想&lt;/h3&gt;
+
+&lt;p&gt;运用的是Hook（钩子）思想，Hook是一种用于改变API(应用程序编程接口：方法)执行结果的技术.
+Hook用处：截获API调用的技术。
+Hook原理：在每次调用一个API返回结果之前，先执行你自己的方法，改变结果的输出。&lt;/p&gt;
+&lt;h3 id=&quot;13-reactivecocoa核心方法bind&quot;&gt;1.3 ReactiveCocoa核心方法bind&lt;/h3&gt;
+
+&lt;p&gt;ReactiveCocoa操作的核心方法是bind（绑定）,而且RAC中核心开发方式，也是绑定，之前的开发方式是赋值，而用RAC开发，应该把重心放在绑定，也就是可以在创建一个对象的时候，就绑定好以后想要做的事情，而不是等赋值之后在去做事情。&lt;/p&gt;
+
+&lt;p&gt;列如：把数据展示到控件上，之前都是重写控件的setModel方法，用RAC就可以在一开始创建控件的时候，就绑定好数据。&lt;/p&gt;
+
+&lt;p&gt;在开发中很少使用bind方法，bind属于RAC中的底层方法，RAC已经封装了很多好用的其他方法，底层都是调用bind，用法比bind简单.&lt;/p&gt;
+
+&lt;p&gt;bind方法简单介绍和使用。
+    // 假设想监听文本框的内容，并且在每次输出结果的时候，都在文本框的内容拼接一段文字“输出：”&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// 方式一:在返回结果后，拼接。
+    [_textField.rac_textSignal subscribeNext:^(id x) {
+
+        NSLog(@&quot;输出:%@&quot;,x);
+
+    }];
+
+// 方式二:在返回结果前，拼接，使用RAC中bind方法做处理。
+// bind方法参数:需要传入一个返回值是RACStreamBindBlock的block参数
+// RACStreamBindBlock是一个block的类型，返回值是信号，参数（value,stop），因此参数的block返回值也是一个block。
+
+// RACStreamBindBlock:
+// 参数一(value):表示接收到信号的原始值，还没做处理
+// 参数二(*stop):用来控制绑定Block，如果*stop = yes,那么就会结束绑定。
+// 返回值：信号，做好处理，在通过这个信号返回出去，一般使用RACReturnSignal,需要手动导入头文件RACReturnSignal.h。
+
+// bind方法使用步骤:
+// 1.传入一个返回值RACStreamBindBlock的block。
+// 2.描述一个RACStreamBindBlock类型的bindBlock作为block的返回值。
+// 3.描述一个返回结果的信号，作为bindBlock的返回值。
+// 注意：在bindBlock中做信号结果的处理。
+
+// 底层实现:
+// 1.源信号调用bind,会重新创建一个绑定信号。
+// 2.当绑定信号被订阅，就会调用绑定信号中的didSubscribe，生成一个bindingBlock。
+// 3.当源信号有内容发出，就会把内容传递到bindingBlock处理，调用bindingBlock(value,stop)
+// 4.调用bindingBlock(value,stop)，会返回一个内容处理完成的信号（RACReturnSignal）。
+// 5.订阅RACReturnSignal，就会拿到绑定信号的订阅者，把处理完成的信号内容发送出来。
+
+// 注意:不同订阅者，保存不同的nextBlock，看源码的时候，一定要看清楚订阅者是哪个。
+// 这里需要手动导入#import &amp;lt;ReactiveCocoa/RACReturnSignal.h&amp;gt;，才能使用RACReturnSignal。
+[[_textField.rac_textSignal bind:^RACStreamBindBlock{
+
+    // 什么时候调用:
+    // block作用:表示绑定了一个信号.
+
+    return ^RACStream *(id value, BOOL *stop){
+
+    // 什么时候调用block:当信号有新的值发出，就会来到这个block。
+
+    // block作用:做返回值的处理
+
+    // 做好处理，通过信号返回出去
+       return [RACReturnSignal return:[NSString stringWithFormat:@&quot;输出:%@&quot;,value]];
+    };
+
+}] subscribeNext:^(id x) {
+
+    NSLog(@&quot;%@&quot;,x);
+
+}]; ### 1.4ReactiveCocoa操作方法之映射(flattenMap,Map)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;flattenMap，Map用于把源信号内容映射成新的内容。
+flattenMap简单使用&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// 监听文本框的内容改变，把结构重新映射成一个新值.
+// flattenMap作用:把源信号的内容映射成一个新的信号，信号可以是任意类型。
+// flattenMap使用步骤:
+// 1.传入一个block，block类型是返回值RACStream，参数value
+// 2.参数value就是源信号的内容，拿到源信号的内容做处理
+// 3.包装成RACReturnSignal信号，返回出去。
+// flattenMap底层实现:
+// 0.flattenMap内部调用bind方法实现的,flattenMap中block的返回值，会作为bind中bindBlock的返回值。
+// 1.当订阅绑定信号，就会生成bindBlock。
+// 2.当源信号发送内容，就会调用bindBlock(value, *stop)
+// 3.调用bindBlock，内部就会调用flattenMap的block，flattenMap的block作用：就是把处理好的数据包装成信号。
+// 4.返回的信号最终会作为bindBlock中的返回信号，当做bindBlock的返回信号。
+// 5.订阅bindBlock的返回信号，就会拿到绑定信号的订阅者，把处理完成的信号内容发送出来
+
+
+
+[[_textField.rac_textSignal flattenMap:^RACStream *(id value) {
+
+    // block什么时候 : 源信号发出的时候，就会调用这个block。
+
+    // block作用 : 改变源信号的内容。
+
+    // 返回值：绑定信号的内容.
+    return [RACReturnSignal return:[NSString stringWithFormat:@&quot;输出:%@&quot;,value]];
+
+}] subscribeNext:^(id x) {
+
+    // 订阅绑定信号，每当源信号发送内容，做完处理，就会调用这个block。
+
+    NSLog(@&quot;%@&quot;,x);
+
+}]; Map简单使用:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;// 监听文本框的内容改变，把结构重新映射成一个新值.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Map作用:把源信号的值映射成一个新的值
+
+// Map使用步骤:
+// 1.传入一个block,类型是返回对象，参数是value
+// 2.value就是源信号的内容，直接拿到源信号的内容做处理
+// 3.把处理好的内容，直接返回就好了，不用包装成信号，返回的值，就是映射的值。
+
+// Map底层实现:
+// 0.Map底层其实是调用flatternMap,Map中block中的返回的值会作为flatternMap中block中的值。
+// 1.当订阅绑定信号，就会生成bindBlock。
+// 3.当源信号发送内容，就会调用bindBlock(value, *stop)
+// 4.调用bindBlock，内部就会调用flattenMap的block
+// 5.flattenMap的block内部会调用Map中的block，把Map中的block返回的内容包装成返回的信号。
+// 5.返回的信号最终会作为bindBlock中的返回信号，当做bindBlock的返回信号。
+// 6.订阅bindBlock的返回信号，就会拿到绑定信号的订阅者，把处理完成的信号内容发送出来。
+
+   [[_textField.rac_textSignal map:^id(id value) {
+    // 当源信号发出，就会调用这个block，修改源信号的内容
+    // 返回值：就是处理完源信号的内容。
+    return [NSString stringWithFormat:@&quot;输出:%@&quot;,value];
+}] subscribeNext:^(id x) {
+
+    NSLog(@&quot;%@&quot;,x);
+}]; FlatternMap和Map的区别
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;1.FlatternMap中的Block返回信号。
+2.Map中的Block返回对象。
+3.开发中，如果信号发出的值不是信号，映射一般使用Map
+4.开发中，如果信号发出的值是信号，映射一般使用FlatternMap。
+总结：signalOfsignals用FlatternMap。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// 创建信号中的信号
+RACSubject *signalOfsignals = [RACSubject subject];
+RACSubject *signal = [RACSubject subject];
+
+[[signalOfsignals flattenMap:^RACStream *(id value) {
+
+ // 当signalOfsignals的signals发出信号才会调用
+
+    return value;
+
+}] subscribeNext:^(id x) {
+
+    // 只有signalOfsignals的signal发出信号才会调用，因为内部订阅了bindBlock中返回的信号，也就是flattenMap返回的信号。
+    // 也就是flattenMap返回的信号发出内容，才会调用。
+
+    NSLog(@&quot;%@aaa&quot;,x);
+}];
+
+// 信号的信号发送信号
+[signalOfsignals sendNext:signal];
+
+// 信号发送内容
+[signal sendNext:@1]; ### 1.5 ReactiveCocoa操作方法之组合。 concat:按一定顺序拼接信号，当多个信号发出的时候，有顺序的接收信号。
+	RACSignal *signalA = [RACSignal createSignal:^RACDisposable 	*(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+    [subscriber sendNext:@1];
+
+    [subscriber sendCompleted];
+
+    return nil;
+}];
+RACSignal *signalB = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+    [subscriber sendNext:@2];
+
+    return nil;
+}];
+
+// 把signalA拼接到signalB后，signalA发送完成，signalB才会被激活。
+RACSignal *concatSignal = [signalA concat:signalB];
+
+// 以后只需要面对拼接信号开发。
+// 订阅拼接的信号，不需要单独订阅signalA，signalB
+// 内部会自动订阅。
+// 注意：第一个信号必须发送完成，第二个信号才会被激活
+[concatSignal subscribeNext:^(id x) {
+
+    NSLog(@&quot;%@&quot;,x);
+
+}];
+
+// concat底层实现:
+// 1.当拼接信号被订阅，就会调用拼接信号的didSubscribe
+// 2.didSubscribe中，会先订阅第一个源信号（signalA）
+// 3.会执行第一个源信号（signalA）的didSubscribe
+// 4.第一个源信号（signalA）didSubscribe中发送值，就会调用第一个源信号（signalA）订阅者的nextBlock,通过拼接信号的订阅者把值发送出来.
+// 5.第一个源信号（signalA）didSubscribe中发送完成，就会调用第一个源信号（signalA）订阅者的completedBlock,订阅第二个源信号（signalB）这时候才激活（signalB）。
+// 6.订阅第二个源信号（signalB）,执行第二个源信号（signalB）的didSubscribe
+// 7.第二个源信号（signalA）didSubscribe中发送值,就会通过拼接信号的订阅者把值发送出来. then:用于连接两个信号，当第一个信号完成，才会连接then返回的信号。
+
+// then:用于连接两个信号，当第一个信号完成，才会连接then返回的信号
+// 注意使用then，之前信号的值会被忽略掉.
+// 底层实现：1、先过滤掉之前的信号发出的值。2.使用concat连接then返回的信号
+[[[RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+ [subscriber sendNext:@1];
+ [subscriber sendCompleted];
+ return nil;
+}] then:^RACSignal *{
+ return [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+     [subscriber sendNext:@2];
+     return nil;
+ }];
+}] subscribeNext:^(id x) {
+
+ // 只能接收到第二个信号的值，也就是then返回信号的值
+ NSLog(@&quot;%@&quot;,x);
+}];
+merge:把多个信号合并为一个信号，任何一个信号有新值的时候就会调用
+    // merge:把多个信号合并成一个信号
+    //创建多个信号
+    
+	    RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+	
+        [subscriber sendNext:@1];
+
+
+        return nil;
+    }];
+
+    RACSignal *signalB = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+        [subscriber sendNext:@2];
+
+        return nil;
+    }];
+
+    // 合并信号,任何一个信号发送数据，都能监听到.
+    RACSignal *mergeSignal = [signalA merge:signalB];
+
+    [mergeSignal subscribeNext:^(id x) {
+
+        NSLog(@&quot;%@&quot;,x);
+
+    }];
+
+    // 底层实现：
+    // 1.合并信号被订阅的时候，就会遍历所有信号，并且发出这些信号。
+    // 2.每发出一个信号，这个信号就会被订阅
+    // 3.也就是合并信号一被订阅，就会订阅里面所有的信号。
+    // 4.只要有一个信号被发出就会被监听。
+zipWith:把两个信号压缩成一个信号，只有当两个信号同时发出信号内容时，并且把两个信号的内容合并成一个元组，才会触发压缩流的next事件。
+ RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+        [subscriber sendNext:@1];
+
+
+        return nil;
+    }];
+
+    RACSignal *signalB = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+        [subscriber sendNext:@2];
+
+        return nil;
+    }];
+
+
+
+    // 压缩信号A，信号B
+    RACSignal *zipSignal = [signalA zipWith:signalB];
+
+    [zipSignal subscribeNext:^(id x) {
+
+        NSLog(@&quot;%@&quot;,x);
+    }];
+
+    // 底层实现:
+    // 1.定义压缩信号，内部就会自动订阅signalA，signalB
+    // 2.每当signalA或者signalB发出信号，就会判断signalA，signalB有没有发出个信号，有就会把最近发出的信号都包装成元组发出。
+combineLatest:将多个信号合并起来，并且拿到各个信号的最新的值,必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。
+
+ RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+   [subscriber sendNext:@1];
+
+   return nil;
+}];
+
+RACSignal *signalB = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+   [subscriber sendNext:@2];
+
+   return nil;
+}];
+
+// 把两个信号组合成一个信号,跟zip一样，没什么区别
+RACSignal *combineSignal = [signalA combineLatestWith:signalB];
+
+[combineSignal subscribeNext:^(id x) {
+
+   NSLog(@&quot;%@&quot;,x);
+}];
+
+// 底层实现：
+// 1.当组合信号被订阅，内部会自动订阅signalA，signalB,必须两个信号都发出内容，才会被触发。
+// 2.并且把两个信号组合成元组发出。
+reduce聚合:用于信号发出的内容是元组，把信号发出元组的值聚合成一个值
+RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+   [subscriber sendNext:@1];
+
+   return nil;
+}];
+
+RACSignal *signalB = [RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+   [subscriber sendNext:@2];
+
+   return nil;
+}];
+
+// 聚合
+// 常见的用法，（先组合在聚合）。combineLatest:(id&amp;lt;NSFastEnumeration&amp;gt;)signals reduce:(id (^)())reduceBlock
+// reduce中的block简介:
+// reduceblcok中的参数，有多少信号组合，reduceblcok就有多少参数，每个参数就是之前信号发出的内容
+// reduceblcok的返回值：聚合信号之后的内容。
+RACSignal *reduceSignal = [RACSignal combineLatest:@[signalA,signalB] reduce:^id(NSNumber *num1 ,NSNumber *num2){
+
+  return [NSString stringWithFormat:@&quot;%@ %@&quot;,num1,num2];
+
+}];
+
+[reduceSignal subscribeNext:^(id x) {
+
+   NSLog(@&quot;%@&quot;,x);
+}];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;// 底层实现:
+// 1.订阅聚合信号，每次有内容发出，就会执行reduceblcok，把信号内容转换成reduceblcok返回的值。
+1.6 ReactiveCocoa操作方法之过滤。&lt;/p&gt;
+
+&lt;p&gt;filter:过滤信号，使用它可以获取满足条件的信号.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// 过滤:
+// 每次信号发出，会先执行过滤条件判断.
+[_textField.rac_textSignal filter:^BOOL(NSString *value) {
+       return value.length &amp;gt; 3;
+}];
+ignore:忽略完某些值的信号.
+   // 内部调用filter过滤，忽略掉ignore的值
+[[_textField.rac_textSignal ignore:@&quot;1&quot;] subscribeNext:^(id x) {
+
+   NSLog(@&quot;%@&quot;,x);
+}];
+distinctUntilChanged:当上一次的值和当前的值有明显的变化就会发出信号，否则会被忽略掉。
+   // 过滤，当上一次和当前的值不一样，就会发出内容。
+// 在开发中，刷新UI经常使用，只有两次数据不一样才需要刷新
+[[_textField.rac_textSignal distinctUntilChanged] subscribeNext:^(id x) {
+
+   NSLog(@&quot;%@&quot;,x);
+}];
+take:从开始一共取N次的信号
+// 1、创建信号
+RACSubject *signal = [RACSubject subject];
+
+// 2、处理信号，订阅信号
+[[signal take:1] subscribeNext:^(id x) {
+
+   NSLog(@&quot;%@&quot;,x);
+}];
+
+// 3.发送信号
+[signal sendNext:@1];
+
+[signal sendNext:@2];
+takeLast:取最后N次的信号,前提条件，订阅者必须调用完成，因为只有完成，就知道总共有多少信号.
+// 1、创建信号
+RACSubject *signal = [RACSubject subject];
+
+// 2、处理信号，订阅信号
+[[signal takeLast:1] subscribeNext:^(id x) {
+
+   NSLog(@&quot;%@&quot;,x);
+}];
+
+// 3.发送信号
+[signal sendNext:@1];
+
+[signal sendNext:@2];
+
+[signal sendCompleted];
+takeUntil:(RACSignal *):获取信号直到某个信号执行完成
+// 监听文本框的改变直到当前对象被销毁
+[_textField.rac_textSignal takeUntil:self.rac_willDeallocSignal];
+skip:(NSUInteger):跳过几个信号,不接受。
+// 表示输入第一次，不会被监听到，跳过第一次发出的信号
+[[_textField.rac_textSignal skip:1] subscribeNext:^(id x) {
+
+   NSLog(@&quot;%@&quot;,x);
+}];
+switchToLatest:用于signalOfSignals（信号的信号），有时候信号也会发出信号，会在signalOfSignals中，获取signalOfSignals发送的最新信号。
+RACSubject *signalOfSignals = [RACSubject subject];
+RACSubject *signal = [RACSubject subject];
+
+// 获取信号中信号最近发出信号，订阅最近发出的信号。
+// 注意switchToLatest：只能用于信号中的信号
+[signalOfSignals.switchToLatest subscribeNext:^(id x) {
+
+   NSLog(@&quot;%@&quot;,x);
+}];
+[signalOfSignals sendNext:signal];
+[signal sendNext:@1]; ### 1.7 ReactiveCocoa操作方法之秩序。
+
+doNext: 执行Next之前，会先执行这个Block
+doCompleted: 执行sendCompleted之前，会先执行这个Block
+
+[[[[RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+  [subscriber sendNext:@1];
+  [subscriber sendCompleted];
+  return nil;
+}] doNext:^(id x) {
+// 执行[subscriber sendNext:@1];之前会调用这个Block
+  NSLog(@&quot;doNext&quot;);;
+}] doCompleted:^{
+   // 执行[subscriber sendCompleted];之前会调用这个Block
+  NSLog(@&quot;doCompleted&quot;);;
+
+}] subscribeNext:^(id x) {
+
+  NSLog(@&quot;%@&quot;,x);
+}]; 1.8 ReactiveCocoa操作方法之线程。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;deliverOn: 内容传递切换到制定线程中，副作用在原来线程中,把在创建信号时block中的代码称之为副作用。&lt;/p&gt;
+
+&lt;p&gt;subscribeOn: 内容传递和副作用都会切换到制定线程中。&lt;/p&gt;
+
+&lt;h3 id=&quot;19-reactivecocoa操作方法之时间&quot;&gt;1.9 ReactiveCocoa操作方法之时间。&lt;/h3&gt;
+
+&lt;p&gt;timeout：超时，可以让一个信号在一定的时间后，自动报错。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;RACSignal *signal = [[RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+ return nil;
+}] timeout:1 onScheduler:[RACScheduler currentScheduler]];
+
+[signal subscribeNext:^(id x) {
+
+ NSLog(@&quot;%@&quot;,x);
+} error:^(NSError *error) {
+ // 1秒后会自动调用
+ NSLog(@&quot;%@&quot;,error);
+}];
+interval 定时：每隔一段时间发出信号
+
+[[RACSignal interval:1 onScheduler:[RACScheduler currentScheduler]] subscribeNext:^(id x) {
+
+ NSLog(@&quot;%@&quot;,x);
+}];
+delay 延迟发送next。
+
+ RACSignal *signal = [[[RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+ [subscriber sendNext:@1];
+ return nil;
+}] delay:2] subscribeNext:^(id x) {
+
+ NSLog(@&quot;%@&quot;,x);
+}]; ## 1.9 ReactiveCocoa操作方法之重复。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;retry重试 ：只要失败，就会重新执行创建信号中的block,直到成功.
+	     __block int i = 0;
+	    [[[RACSignal createSignal:^RACDisposable *(id&lt;RACSubscriber&gt; subscriber) {&lt;/RACSubscriber&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            if (i == 10) {
+                [subscriber sendNext:@1];
+            }else{
+                NSLog(@&quot;接收到错误&quot;);
+                [subscriber sendError:nil];
+            }
+            i++;
+
+        return nil;
+
+    }] retry] subscribeNext:^(id x) {
+
+        NSLog(@&quot;%@&quot;,x);
+
+    } error:^(NSError *error) {
+
+
+    }];
+replay重放：当一个信号被多次订阅,反复播放内容
+        RACSignal *signal = [[RACSignal createSignal:^RACDisposable *(id&amp;lt;RACSubscriber&amp;gt; subscriber) {
+
+
+        [subscriber sendNext:@1];
+        [subscriber sendNext:@2];
+
+        return nil;
+    }] replay];
+
+    [signal subscribeNext:^(id x) {
+
+        NSLog(@&quot;第一个订阅者%@&quot;,x);
+
+    }];
+
+    [signal subscribeNext:^(id x) {
+
+        NSLog(@&quot;第二个订阅者%@&quot;,x);
+
+    }]; throttle节流:当某个信号发送比较频繁时，可以使用节流，在某一段时间不发送信号内容，过了一段时间获取信号的最新内容发出。
+
+   RACSubject *signal = [RACSubject subject];
+
+_signal = signal;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;// 节流，在一定时间（1秒）内，不接收任何信号内容，过了这个时间（1秒）获取最后发送的信号内容发出。
+	[[signal throttle:1] subscribeNext:^(id x) {&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   NSLog(@&quot;%@&quot;,x);
+}]; ## 2.介绍MVVM架构思想。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;21-程序为什么要架构便于程序员开发和维护代码&quot;&gt;2.1 程序为什么要架构：便于程序员开发和维护代码。&lt;/h3&gt;
+
+&lt;h3 id=&quot;22-常见的架构思想&quot;&gt;2.2 常见的架构思想:&lt;/h3&gt;
+
+&lt;p&gt;MVC M:模型 V:视图 C:控制器&lt;/p&gt;
+
+&lt;p&gt;MVVM M:模型 V:视图+控制器 VM:视图模型&lt;/p&gt;
+
+&lt;p&gt;MVCS M:模型 V:视图 C:控制器 C:服务类&lt;/p&gt;
+
+&lt;p&gt;VIPER V:视图 I:交互器 P:展示器 E:实体 R:路由
+PS:VIPER架构思想&lt;/p&gt;
+
+&lt;h3 id=&quot;23-mvvm介绍&quot;&gt;2.3 MVVM介绍&lt;/h3&gt;
+
+&lt;p&gt;模型(M):保存视图数据。&lt;/p&gt;
+
+&lt;p&gt;视图+控制器(V):展示内容 + 如何展示&lt;/p&gt;
+
+&lt;p&gt;视图模型(VM):处理展示的业务逻辑，包括按钮的点击，数据的请求和解析等等。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;3reactivecocoa--mvvm-实战一登录界面&quot;&gt;3.ReactiveCocoa + MVVM 实战一：登录界面&lt;/h1&gt;
+
+&lt;h3 id=&quot;31需求分析步骤&quot;&gt;3.1需求+分析+步骤&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;需求：1.监听两个文本框的内容，有内容才允许按钮点击
+       2.默认登录请求.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;用MVVM：实现，之前界面的所有业务逻辑
+分析：1.之前界面的所有业务逻辑都交给控制器做处理
+     2.在MVVM架构中把控制器的业务全部搬去VM模型，也就是每个控制器对应一个VM模型.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;步骤：&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;创建LoginViewModel类，处理登录界面业务逻辑.&lt;/li&gt;
+    &lt;li&gt;这个类里面应该保存着账号的信息，创建一个账号Account模型
+3.LoginViewModel应该保存着账号信息Account模型。
+ 4.需要时刻监听Account模型中的账号和密码的改变，怎么监听？
+ 5.在非RAC开发中，都是习惯赋值，在RAC开发中，需要改变开发思维，由赋值转变为绑定，可以在一开始初始化的时候，就给Account模型中的属性绑定，并不需要重写set方法。
+ 6.每次Account模型的值改变，就需要判断按钮能否点击，在VM模型中做处理，给外界提供一个能否点击按钮的信号.
+ 7.这个登录信号需要判断Account中账号和密码是否有值，用KVO监听这两个值的改变，把他们聚合成登录信号.
+ 8.监听按钮的点击，由VM处理，应该给VM声明一个RACCommand，专门处理登录业务逻辑.
+ 9.执行命令，把数据包装成信号传递出去
+ 10.监听命令中信号的数据传递
+ 11.监听命令的执行时刻&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;32-控制器的代码&quot;&gt;3.2 控制器的代码&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ViewController&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LoginViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IBOutlet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UITextField&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;accountField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IBOutlet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UITextField&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pwdField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IBOutlet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UIButton&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LoginViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginViewModel&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_loginViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;_loginViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LoginViewModel&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_loginViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 视图模型绑定
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bindModel&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 给模型的属性绑定信号
+// 只要账号文本框一改变，就会给account赋值
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RAC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_accountField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rac_textSignal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;RAC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_pwdField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rac_textSignal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 绑定登录按钮
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RAC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enabled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enableLoginSignal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+  	 // 监听登录按钮点击
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_loginBtn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rac_signalForControlEvents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UIControlEventTouchUpInside&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;subscribeNext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// 执行登录事件
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LoginCommand&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;###&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VM&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;的代码&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LoginViewModel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;NSObject&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Account&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// 是否允许登录的信号
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readonly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RACSignal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enableLoginSignal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readonly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RACCommand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LoginCommand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LoginViewModel&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Account&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_account&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;_account&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Account&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instancetype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialBind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// 初始化绑定
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initialBind&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 监听账号的属性值改变，把他们聚合成一个信号。
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;_enableLoginSignal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACSignal&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;combineLatest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:@[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACObserve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACObserve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 处理登录业务逻辑
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_LoginCommand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACCommand&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initWithSignalBlock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACSignal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;NSLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;点击了登录&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACSignal&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;createSignal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACDisposable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACSubscriber&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subscriber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// 模仿网络延迟
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;dispatch_after&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dispatch_time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DISPATCH_TIME_NOW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int64_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSEC_PER_SEC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dispatch_get_main_queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+            &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subscriber&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendNext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;登录成功&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+            &lt;span class=&quot;c1&quot;&gt;// 数据传送完毕，必须调用完成，否则命令永远处于执行状态
+&lt;/span&gt;            &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subscriber&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendCompleted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 监听登录产生的数据
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_LoginCommand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executionSignals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switchToLatest&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;subscribeNext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isEqualToString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;登录成功&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;NSLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;登录成功&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 监听登录状态
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_LoginCommand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executing&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;skip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;subscribeNext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isEqualToNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;YES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// 正在登录ing...
+&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;// 用蒙版提示
+&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MBProgressHUD&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;showMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;正在登录...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 登录成功
+&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;// 隐藏蒙版
+&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MBProgressHUD&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hideHUD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;#4.ReactiveCocoa + MVVM 实战二：网络请求数据&lt;/p&gt;
+
+&lt;h3 id=&quot;41-接口这里先给朋友介绍一个免费的网络数据接口豆瓣可以经常用来练习一些网络请求的小demo&quot;&gt;4.1 接口：这里先给朋友介绍一个免费的网络数据接口，豆瓣。可以经常用来练习一些网络请求的小Demo.&lt;/h3&gt;
+
+&lt;h3 id=&quot;42-需求分析步骤&quot;&gt;4.2 需求+分析+步骤&lt;/h3&gt;
+
+&lt;p&gt;需求：请求豆瓣图书信息，url:https://api.douban.com/v2/book/search?q=基础&lt;/p&gt;
+
+&lt;p&gt;分析：请求一样，交给VM模型管理&lt;/p&gt;
+
+&lt;p&gt;步骤:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;控制器提供一个视图模型（requesViewModel），处理界面的业务逻辑&lt;/li&gt;
+    &lt;li&gt;VM提供一个命令，处理请求业务逻辑&lt;/li&gt;
+    &lt;li&gt;在创建命令的block中，会把请求包装成一个信号，等请求成功的时候，就会把数据传递出去。&lt;/li&gt;
+    &lt;li&gt;请求数据成功，应该把字典转换成模型，保存到视图模型中，控制器想用就直接从视图模型中获取。&lt;/li&gt;
+    &lt;li&gt;假设控制器想展示内容到tableView，直接让视图模型成为tableView的数据源，把所有的业务逻辑交给视图模型去做，这样控制器的代码就非常少了。&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;43控制器代码&quot;&gt;4.3控制器代码&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	&lt;span class=&quot;k&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ViewController&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UITableView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RequestViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requesViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	
+	
+	&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ViewController&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RequestViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requesViewModel&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_requesViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	        &lt;span class=&quot;n&quot;&gt;_requesViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RequestViewModel&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_requesViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;viewDidLoad&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;viewDidLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	    &lt;span class=&quot;c1&quot;&gt;// Do any additional setup after loading the view, typically from a nib.
+&lt;/span&gt;	
+	    &lt;span class=&quot;c1&quot;&gt;// 创建tableView
+&lt;/span&gt;	    &lt;span class=&quot;n&quot;&gt;UITableView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UITableView&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initWithFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bounds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataSource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requesViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	
+	    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addSubview&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	
+	    &lt;span class=&quot;c1&quot;&gt;// 执行请求
+&lt;/span&gt;	 &lt;span class=&quot;n&quot;&gt;RACSignal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requesSiganl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requesViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reuqesCommand&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	
+	   &lt;span class=&quot;c1&quot;&gt;// 获取请求的数据
+&lt;/span&gt;	    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requesSiganl&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;subscribeNext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	
+	        &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requesViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	
+	        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;reloadData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	
+	    &lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;###&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;视图模型&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;代码&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RequestViewModel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UITableViewDataSource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+	
+	
+	    &lt;span class=&quot;c1&quot;&gt;// 请求命令
+&lt;/span&gt;	    &lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readonly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RACCommand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reuqesCommand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	
+	    &lt;span class=&quot;c1&quot;&gt;//模型数组
+&lt;/span&gt;	    &lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readonly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	
+	
+	
+	&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RequestViewModel&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instancetype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	
+	        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialBind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	
+	
+	&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initialBind&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;_reuqesCommand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACCommand&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initWithSignalBlock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACSignal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	
+	        &lt;span class=&quot;n&quot;&gt;RACSignal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requestSignal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACSignal&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;createSignal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACDisposable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RACSubscriber&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subscriber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	
+	
+	            &lt;span class=&quot;n&quot;&gt;NSMutableDictionary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSMutableDictionary&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	            &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;q&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;@&quot;基础&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	
+	            &lt;span class=&quot;c1&quot;&gt;// 发送请求
+&lt;/span&gt;	            &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AFHTTPRequestOperationManager&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;manager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;https://api.douban.com/v2/book/search&quot;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AFHTTPRequestOperation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_Nonnull&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;_Nonnull&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;responseObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	                &lt;span class=&quot;n&quot;&gt;NSLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;%@&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;responseObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	
+	                &lt;span class=&quot;c1&quot;&gt;// 请求成功调用
+&lt;/span&gt;	                &lt;span class=&quot;c1&quot;&gt;// 把数据用信号传递出去
+&lt;/span&gt;	                &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subscriber&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendNext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;responseObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	
+	                &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subscriber&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendCompleted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	
+	
+	            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AFHTTPRequestOperation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_Nonnull&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSError&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_Nonnull&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	                &lt;span class=&quot;c1&quot;&gt;// 请求失败调用
+&lt;/span&gt;	
+	            &lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+	
+	            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+	
+	
+	
+	
+	        &lt;span class=&quot;c1&quot;&gt;// 在返回数据信号时，把数据中的字典映射成模型信号，传递出去
+&lt;/span&gt;	        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requestSignal&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSDictionary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	            &lt;span class=&quot;n&quot;&gt;NSMutableArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dictArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&quot;books&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	
+	            &lt;span class=&quot;c1&quot;&gt;// 字典转模型，遍历字典中的所有元素，全部映射成模型，并且生成数组
+&lt;/span&gt;	            &lt;span class=&quot;n&quot;&gt;NSArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;modelArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dictArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rac_sequence&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	
+	                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Book&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bookWithDict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	            &lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	
+	            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modelArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+	
+	    &lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+	
+	 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&quot;cp&quot;&gt;#pragma mark - UITableViewDataSource
+&lt;/span&gt;	
+	&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSInteger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UITableView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numberOfRowsInSection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSInteger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;section&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UITableViewCell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UITableView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cellForRowAtIndexPath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSIndexPath&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;indexPath&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;@&quot;cell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;UITableViewCell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dequeueReusableCellWithIdentifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	
+	        &lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UITableViewCell&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initWithStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UITableViewCellStyleSubtitle&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;reuseIdentifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	
+	    &lt;span class=&quot;n&quot;&gt;Book&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;indexPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;detailTextLabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subtitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textLabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		
+		    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+		
+		&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>前端开发必看的14本书</title>
+        <link>http://localhost:4000/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%BF%85%E7%9C%8B%E7%9A%8414%E6%9C%AC%E4%B9%A6</link>
+        <pubDate>Wed, 05 Mar 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;在学习web开发的过程中，实践是出真知的有力武器，但在逻辑思维的训练和撸代码的实践过程中，书籍无疑是最有力的参考工具。以下是学习前端各个阶段所需要的14本经典书目，前端小伙伴，赶紧收好！&lt;/p&gt;
+
+&lt;p&gt;##第一阶段：HTML和CSS的学习&lt;/p&gt;
+
+&lt;p&gt;HTML就不多说了，基础中的基础，这个都不会的小伙伴请参见HTML手册，认真学习W3C课程，稍有基础之后可以跟着视频学习《HTML+CSS基础课程》。&lt;/p&gt;
+
+&lt;p&gt;欧克！荐书开始！&lt;/p&gt;
+
+&lt;h3 id=&quot;1css权威指南第三版&quot;&gt;1、《CSS权威指南》第三版&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-6f0cb81ccbf811e0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这本书实在太适合小白用户了，是一本为初学者清扫障碍的书籍。同行一致认为这本书是学习CSS基础的首选。CSS界权威Meyer大师的作品，翻译水平也灰常赞！&lt;/p&gt;
+
+&lt;h3 id=&quot;2css那些事儿&quot;&gt;2、《CSS那些事儿》&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-95e7b5453b425183.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;不用于一般技术类书籍的枯燥乏味，这本书很有意思。作者是蓝色理想经典论坛标准版荣誉版主林小志，具有多年网站设计和网站重构经验，在CSS、XHTML等前台技术方面有着深厚功底。&lt;/p&gt;
+
+&lt;p&gt;全书以传达CSS布局思维为中心，通过页面中的文字、图片、表格、表单等常见元素的处理及各种页面布局方式的使用，使读者能深入了解到如何在页面中更好地运用CSS布局。阅读本书之后将会发现，原来CSS样式居然是这么好玩的东西。&lt;/p&gt;
+
+&lt;h3 id=&quot;3精通css高级web标准解决方案第二版&quot;&gt;3、《精通CSS：高级Web标准解决方案》第二版&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-bb8e9cc4020638b3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;前段学习必备书籍，作者Andy Budd是国际顶尖的网页设计师，著名的Web标准倡导者，网页咨询公司Clearleft的创始人之一。&lt;/p&gt;
+
+&lt;p&gt;本书将最有用的CSS技术汇总在一起，总结了CSS设计中的最佳实践，讨论了解决各种实际问题的技术，重点讲解了一系列的css开发技巧，是前端开发人员必备的手册。&lt;/p&gt;
+
+&lt;h3 id=&quot;4css禅意花园&quot;&gt;4、《CSS禅意花园》&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-c113443413a5146a.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这是一本令人惊叹的书！必须用一个字形容的话，那就是：美！内容编排合理,文字生动有趣引人入胜,通过一个个实例引导读者阅读，强烈推荐！&lt;/p&gt;
+
+&lt;p&gt;作者是世界著名的网站设计师，书中的范例来自网站设计领域最著名的网站——CSS Zen Garden（CSS禅意花园）。童鞋们自己去领略吧。&lt;/p&gt;
+
+&lt;p&gt;第二阶段——JavaScript的学习&lt;/p&gt;
+
+&lt;p&gt;Javascript的书籍当然还是要看老外的，你懂得~&lt;/p&gt;
+
+&lt;h3 id=&quot;5javascriptdom编程艺术&quot;&gt;5、《JavaScriptDOM编程艺术》&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-e1bfcffa957f1489.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;此书绝对是入门好书，简洁优美的文笔简直是工具书中的典范啊有木有！&lt;/p&gt;
+
+&lt;p&gt;这本书讲述了JavaScript和DOM的基础知识，但重点放在DOM编程技术背后的思路和原则，然后将这些概念贯穿在书中的所有代码示例中，使你看到用来创建图片库页面的脚本、用来创建动画效果的脚本和用来丰富页面元素呈现效果的脚本，最后结合所讲述的内容创建了一个实际的网站。&lt;/p&gt;
+
+&lt;h3 id=&quot;6javascript权威指南第6版&quot;&gt;6、《JavaScript权威指南》第6版&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-6d308cff55ae1eb4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这本书非常适合初级、中级程序员，是学习核心JavaScript语言和由Web浏览器定义的JavaScript API的指南和综合参考手册。&lt;/p&gt;
+
+&lt;p&gt;第6版涵盖HTML 5和ECMAScript 5。很多章节完全重写，紧跟当今最佳Web开发实践。本书新增章节描述了jQuery和服务器端JavaScript。&lt;/p&gt;
+
+&lt;h3 id=&quot;7javascript高级程序设计第三版&quot;&gt;7、《JavaScript高级程序设计》第三版&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-1f6192c24b61e73d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;《javascript权威指南》比较像一本字典，而这本《javascript高级程序设计》可以算是一本由浅入深的好读物。这两本书看完后，对javascript一定会有较为深入的了解。&lt;/p&gt;
+
+&lt;p&gt;作者Nicholas C. Zakas是世界顶级Web技术专家，现为雅虎公司界面呈现架构师，负责My Yahoo!和雅虎首页等大访问量站点的设计。这本书，看一遍不能算看过，至少读两三遍，每一遍都会让你有新的收获。&lt;/p&gt;
+
+&lt;h3 id=&quot;8高性能javascript&quot;&gt;8、《高性能JavaScript》&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-b0707bf7416a3aef.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本书从性能角度全面分析js，含金量非常大，很多知识都是作者通过实践总结出来的，都是经验的积累，强烈推荐！&lt;/p&gt;
+
+&lt;p&gt;同是Nicholas C. Zakas所写，如果看《JS高级程序设计》觉得理解不太透彻，学习较为吃力，那么我强烈建议你看看这本书，真的是极好的一本实践类书籍，言简意赅，灰常实用！&lt;/p&gt;
+
+&lt;h3 id=&quot;9javascript王者归来&quot;&gt;9、《JavaScript王者归来》&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-0b99c03559b938cf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这本《JavaScript王者归来》不仅是一本传播知识的书，更是一本求道的书。O(∩_∩)O 有追求的程序员一定不要错过！愿神力与你同在！&lt;/p&gt;
+
+&lt;p&gt;它揭开了JavaScript的面纱，绕过误解和虚幻的表象，引领你探索程序王国的奥妙。这是一本探寻程序设计思想本源的“魔法典籍”，也是一本Web开发工程师们需要的案头参考书。&lt;/p&gt;
+
+&lt;h3 id=&quot;10javascript模式&quot;&gt;10、《JavaScript模式》&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-5e3bdc2e581e082b.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;它绝对不是一本入门级别的书，适用于希望将自身的Javascript技巧提高到一个新层次的专业的开发人员和程序员。&lt;/p&gt;
+
+&lt;p&gt;《JavaScript模式》包含了实现每个讨论的模式的实践建议，并附有数个可以立即上手的范例；同时还可以学到一些反模式。短小精悍，进阶必读！&lt;/p&gt;
+
+&lt;h3 id=&quot;11javascript设计模式&quot;&gt;11、《JavaScript设计模式》&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-b941c6763486fafe.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;进阶教程，得有一定功底才能看懂。反之，如果你轻而易举就能拿下此书，说明你已非等闲之辈~&lt;/p&gt;
+
+&lt;p&gt;本书共有两部分。第一部分给出了实现具体设计模式所需要的面向对象特性的基础知识，第二部分则专注于各种具体的设计模式及其在JavaScript语言中的应用，主要介绍了工厂模式、桥接模式、组合模式、门面模式等几种常见的模式。&lt;/p&gt;
+
+&lt;p&gt;第三阶段——jQUery的学习&lt;/p&gt;
+
+&lt;h3 id=&quot;12锋利的jquery第二版&quot;&gt;12、《锋利的jQuery》第二版&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-1b03538fc7d52f77.jpg&quot; alt=&quot;&quot; /&gt;
+入门首选，简单易懂，非常实在。《锋利的jQuery(第2版)》循序渐进地对jQuery的各种函数和方法调用进行了介绍，对jQuery分析的逻辑非常值得学习。&lt;/p&gt;
+
+&lt;p&gt;第四阶段—学无止境！&lt;/p&gt;
+
+&lt;p&gt;如果以上书籍你全都搞定了，那么，恭喜你，你真的很厉害！到这种程度，相信你也不太需要别人推荐书籍了，不过我还是厚着脸皮推荐两本吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;13高性能网站建设指南&quot;&gt;13、《高性能网站建设指南》&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-451a642c8af6de13.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;前端开发可以优化网站剩余70%~80%性能，这本书不算厚，几个小时就能看完，推荐前端开发工程师看看。在《高性能网站建设指南》中，作者给出了14条具体的优化原则，每一条原则都配以范例佐证，并提供了在线支持。&lt;/p&gt;
+
+&lt;h3 id=&quot;14web开发敏捷之道第二版&quot;&gt;14、《Web开发敏捷之道》第二版&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/source/675733-6e211eab4d1011d8.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;想成为优秀的前端工程师，强烈建议阅读此书！&lt;/p&gt;
+</description>
+      </item>
+    
+
+  </channel>
+</rss>
