@@ -13,27 +13,28 @@ HTML就不多说了，基础中的基础，这个都不会的小伙伴请参见H
 欧克！荐书开始！
 
 ### 1、《CSS权威指南》第三版
-![](/public/images/source/675733-6f0cb81ccbf811e0.jpg)
+/sustain/static/img
+![](/sustain/static/img/source/675733-6f0cb81ccbf811e0.jpg)
 
 这本书实在太适合小白用户了，是一本为初学者清扫障碍的书籍。同行一致认为这本书是学习CSS基础的首选。CSS界权威Meyer大师的作品，翻译水平也灰常赞！
 
 
 ### 2、《CSS那些事儿》
-![](/public/images/source/675733-95e7b5453b425183.jpg)
+![](/sustain/static/img/source/675733-95e7b5453b425183.jpg)
 
 不用于一般技术类书籍的枯燥乏味，这本书很有意思。作者是蓝色理想经典论坛标准版荣誉版主林小志，具有多年网站设计和网站重构经验，在CSS、XHTML等前台技术方面有着深厚功底。
 
 全书以传达CSS布局思维为中心，通过页面中的文字、图片、表格、表单等常见元素的处理及各种页面布局方式的使用，使读者能深入了解到如何在页面中更好地运用CSS布局。阅读本书之后将会发现，原来CSS样式居然是这么好玩的东西。
 
 ### 3、《精通CSS：高级Web标准解决方案》第二版
-![](/public/images/source/675733-bb8e9cc4020638b3.jpg)
+![](/sustain/static/img/source/675733-bb8e9cc4020638b3.jpg)
 
 前段学习必备书籍，作者Andy Budd是国际顶尖的网页设计师，著名的Web标准倡导者，网页咨询公司Clearleft的创始人之一。
 
 本书将最有用的CSS技术汇总在一起，总结了CSS设计中的最佳实践，讨论了解决各种实际问题的技术，重点讲解了一系列的css开发技巧，是前端开发人员必备的手册。
 
 ### 4、《CSS禅意花园》
-![](/public/images/source/675733-c113443413a5146a.jpg)
+![](/sustain/static/img/source/675733-c113443413a5146a.jpg)
 
 这是一本令人惊叹的书！必须用一个字形容的话，那就是：美！内容编排合理,文字生动有趣引人入胜,通过一个个实例引导读者阅读，强烈推荐！
 
@@ -44,49 +45,49 @@ HTML就不多说了，基础中的基础，这个都不会的小伙伴请参见H
 Javascript的书籍当然还是要看老外的，你懂得~
 
 ### 5、《JavaScriptDOM编程艺术》
-![](/public/images/source/675733-e1bfcffa957f1489.jpg)
+![](/sustain/static/img/source/675733-e1bfcffa957f1489.jpg)
 
 此书绝对是入门好书，简洁优美的文笔简直是工具书中的典范啊有木有！
 
 这本书讲述了JavaScript和DOM的基础知识，但重点放在DOM编程技术背后的思路和原则，然后将这些概念贯穿在书中的所有代码示例中，使你看到用来创建图片库页面的脚本、用来创建动画效果的脚本和用来丰富页面元素呈现效果的脚本，最后结合所讲述的内容创建了一个实际的网站。
 
 ### 6、《JavaScript权威指南》第6版
-![](/public/images/source/675733-6d308cff55ae1eb4.jpg)
+![](/sustain/static/img/source/675733-6d308cff55ae1eb4.jpg)
 
 这本书非常适合初级、中级程序员，是学习核心JavaScript语言和由Web浏览器定义的JavaScript API的指南和综合参考手册。
 
 第6版涵盖HTML 5和ECMAScript 5。很多章节完全重写，紧跟当今最佳Web开发实践。本书新增章节描述了jQuery和服务器端JavaScript。
 
 ### 7、《JavaScript高级程序设计》第三版
-![](/public/images/source/675733-1f6192c24b61e73d.jpg)
+![](/sustain/static/img/source/675733-1f6192c24b61e73d.jpg)
 
 《javascript权威指南》比较像一本字典，而这本《javascript高级程序设计》可以算是一本由浅入深的好读物。这两本书看完后，对javascript一定会有较为深入的了解。
 
 作者Nicholas C. Zakas是世界顶级Web技术专家，现为雅虎公司界面呈现架构师，负责My Yahoo!和雅虎首页等大访问量站点的设计。这本书，看一遍不能算看过，至少读两三遍，每一遍都会让你有新的收获。
 
 ### 8、《高性能JavaScript》
-![](/public/images/source/675733-b0707bf7416a3aef.jpg)
+![](/sustain/static/img/source/675733-b0707bf7416a3aef.jpg)
 
 本书从性能角度全面分析js，含金量非常大，很多知识都是作者通过实践总结出来的，都是经验的积累，强烈推荐！
 
 同是Nicholas C. Zakas所写，如果看《JS高级程序设计》觉得理解不太透彻，学习较为吃力，那么我强烈建议你看看这本书，真的是极好的一本实践类书籍，言简意赅，灰常实用！
 
 ### 9、《JavaScript王者归来》
-![](/public/images/source/675733-0b99c03559b938cf.jpg)
+![](/sustain/static/img/source/675733-0b99c03559b938cf.jpg)
 
 这本《JavaScript王者归来》不仅是一本传播知识的书，更是一本求道的书。O(∩_∩)O 有追求的程序员一定不要错过！愿神力与你同在！
 
 它揭开了JavaScript的面纱，绕过误解和虚幻的表象，引领你探索程序王国的奥妙。这是一本探寻程序设计思想本源的“魔法典籍”，也是一本Web开发工程师们需要的案头参考书。
 
 ### 10、《JavaScript模式》
-![](/public/images/source/675733-5e3bdc2e581e082b.jpg)
+![](/sustain/static/img/source/675733-5e3bdc2e581e082b.jpg)
 
 它绝对不是一本入门级别的书，适用于希望将自身的Javascript技巧提高到一个新层次的专业的开发人员和程序员。
 
 《JavaScript模式》包含了实现每个讨论的模式的实践建议，并附有数个可以立即上手的范例；同时还可以学到一些反模式。短小精悍，进阶必读！
 
 ### 11、《JavaScript设计模式》
-![](/public/images/source/675733-b941c6763486fafe.jpg)
+![](/sustain/static/img/source/675733-b941c6763486fafe.jpg)
 
 进阶教程，得有一定功底才能看懂。反之，如果你轻而易举就能拿下此书，说明你已非等闲之辈~
 
@@ -96,7 +97,7 @@ Javascript的书籍当然还是要看老外的，你懂得~
 
 ### 12、《锋利的jQuery》第二版
 
-![](/public/images/source/675733-1b03538fc7d52f77.jpg)
+![](/sustain/static/img/source/675733-1b03538fc7d52f77.jpg)
 入门首选，简单易懂，非常实在。《锋利的jQuery(第2版)》循序渐进地对jQuery的各种函数和方法调用进行了介绍，对jQuery分析的逻辑非常值得学习。
 
 第四阶段—学无止境！
@@ -104,11 +105,11 @@ Javascript的书籍当然还是要看老外的，你懂得~
 如果以上书籍你全都搞定了，那么，恭喜你，你真的很厉害！到这种程度，相信你也不太需要别人推荐书籍了，不过我还是厚着脸皮推荐两本吧。
 
 ### 13、《高性能网站建设指南》
-![](/public/images/source/675733-451a642c8af6de13.jpg)
+![](/sustain/static/img/source/675733-451a642c8af6de13.jpg)
 
 前端开发可以优化网站剩余70%~80%性能，这本书不算厚，几个小时就能看完，推荐前端开发工程师看看。在《高性能网站建设指南》中，作者给出了14条具体的优化原则，每一条原则都配以范例佐证，并提供了在线支持。
 
 ### 14、《Web开发敏捷之道》第二版
-![](/public/images/source/675733-6e211eab4d1011d8.jpg)
+![](/sustain/static/img/source/675733-6e211eab4d1011d8.jpg)
 
 想成为优秀的前端工程师，强烈建议阅读此书！

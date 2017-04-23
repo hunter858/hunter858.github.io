@@ -1,40 +1,42 @@
 ---
 layout: post
 title: 最常见的20个jQuery 面试问题及答案
+tags:
+- JQuery
 ---
 
-毫无疑问，jQuery给了JavaScript急需的提振，这是一门如此有用，但同时总是常常被低估的语言. 在 jQuery 粉墨登场之前，我们曾经会写出冗长的JavaScript代码，不仅仅为更大型的应用程序，有时即使是更小的应用程序也要如此. 那种代码常常是既难以阅读又难以维护的.
+>毫无疑问，jQuery给了JavaScript急需的提振，这是一门如此有用，但同时总是常常被低估的语言. 在 jQuery 粉墨登场之前，我们曾经会写出冗长的JavaScript代码，不仅仅为更大型的应用程序，有时即使是更小的应用程序也要如此. 那种代码常常是既难以阅读又难以维护的.
 
-在使用这个优秀的库之前写过原生的JavaScript，仅仅在用过它的一个月之后，我就能意识到jQuery的真正力量. 鉴于它的巨大人气，有关jQuery的面试问题，以及有关HTML和JavaScript的数量在任何web开发者面试中有所增加. 因为 jQuery 相对较新，大多数面试所涉及的问题都是围绕核心的 jQuery 库的，包括选择器, DOM 操作 以及 jQuery 基础.
+>在使用这个优秀的库之前写过原生的JavaScript，仅仅在用过它的一个月之后，我就能意识到jQuery的真正力量. 鉴于它的巨大人气，有关jQuery的面试问题，以及有关HTML和JavaScript的数量在任何web开发者面试中有所增加. 因为 jQuery 相对较新，大多数面试所涉及的问题都是围绕核心的 jQuery 库的，包括选择器, DOM 操作 以及 jQuery 基础.
 
 在本篇文章中，我要向 HTML 和 JavaScript 开发人员分享 20 个在不同面试遇到的 jQuery 问题。这里面的一些问题也许同样会在那些要求同时进行服务端(Spring，Servlet 和 JSP)和客户端(HTML，CSS，JavaScript 和 jQuery)的开发 Java Web 开发面试中涉及。
 
 如果你正要去面试一个职位，它需要你拥有多项技能，比如：Java、jQuery，它并不是希望你明白jQuery每一个细微的细节，或对其有全面的了解，但是如果你是要面试一个真正的客户端开发职位，你就需要积累更多高级的有技巧性的jQuery问题，而不限于本文列举的这些问题。不过，你可以通过本文来快速的温习那些jQuery面试中经常被提到的问题，而且它们大多也适用于有2到5年经验的web开发人员，特别是Java领域。
 
-##jQuery 面试问题和答案
+### jQuery 面试问题和答案
 
 
 JavaScript 是客户端脚本的标准语言，而 jQuery 使得编写 JavaScript 更加简单。你可以只用写几行的jQuery 代码就能实现更多的东西. 它是最常被用到的 JavaScript 库之一，并且现在已经很少有不用jQuery 而使用原生 JavaScript 的新项目了。这对于作为一个 Java web 开发者的你而言意味着你会在一场Java web开发面试中发现许多jQuery的面试问题.
 
 早些时候，绝大部分都是 HTTP, HTML, CSS 以及 JavaScript，但最近开始，除了 JavaScript 基础之外，人们也希望知道你是否熟悉 jQuery。这16个jQuery的问题是为web开发者准备的，且也能够非常方便你在参加一次电话或者视频一轮的面试之前纠正一些关键的概念。如果你是  jQuery 新手，那么它也能够帮助你更加好的理解基础知识，并激励你去发现更多东西。
 
-###1. jQuery 库中的 $() 是什么？（答案如下）
+### 1. jQuery 库中的 $() 是什么？（答案如下）
 -----------------
 $() 函数是 jQuery() 函数的别称，乍一看这很怪异，还使 jQuery 代码晦涩难懂。一旦你适应了，你会爱上它的简洁。$() 函数用于将任何对象包裹成 jQuery 对象，接着你就被允许调用定义在 jQuery 对象上的多个不同方法。你甚至可以将一个选择器字符串传入 $() 函数，它会返回一个包含所有匹配的 DOM 元素数组的 jQuery 对象。这个问题我已经见过好几次被提及，尽管它非常基础，它经常被用来区分一个开发人员是否了解 jQuery。
 
-###2. 网页上有 5 个
+### 2. 网页上有 5 个
+
 -----------------
 元素，如何使用 jQuery来选择它们？（答案）
-
 另一个重要的 jQuery 问题是基于选择器的。jQuery 支持不同类型的选择器，例如 ID 选择器、class 选择器、标签选择器。鉴于这个问题没提到 ID 和 class，你可以用标签选择器来选择所有的 div 元素。jQuery 代码：$("div")，这样会返回一个包含所有 5 个 div 标签的 jQuery 对象。更详细的解答参见上面链接的文章。
 
-###3. jQuery 里的 ID 选择器和 class 选择器有何不同？（答案）
+### 3. jQuery 里的 ID 选择器和 class 选择器有何不同？（答案）
 -----------------
 
 如果你用过 CSS，你也许就知道 ID 选择器和 class 选择器之间的差异，jQuery 也同样如此。ID 选择器使用 ID 来选择元素，比如 #element1，而 class 选择器使用 CSS class 来选择元素。当你只需要选择一个元素时，使用 ID 选择器，而如果你想要选择一组具有相同 CSS class 的元素，就要用 class 选择器。在面试过程中，你有很大几率会被要求使用 ID 选择器和 class 选择器来写代码。下面的 jQuery 代码使用了 ID 选择器和 class 选择器：
 
-$('#LoginTextBox')  // Returns element wrapped as jQuery object with id='LoginTextBox'
-$('.active') // Returns all elements with CSS class active.
+	$('#LoginTextBox')  // Returns element wrapped as jQuery object with id='LoginTextBox'
+	$('.active') // Returns all elements with CSS class active.
 正如你所见，从语法角度来说，ID 选择器和 class 选择器的另一个不同之处是，前者用字符”#”而后者用字符”.”。更详细的分析和讨论参见上面的答案链接。
 
 ###4. 如何在点击一个按钮时使用 jQuery 隐藏一个图片？
