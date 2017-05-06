@@ -1,7 +1,7 @@
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: 'Lato', "Open Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 15px;
   color: #404040;
   overflow-x: hidden;
 }
@@ -19,6 +19,12 @@ h6 {
   line-height: 1.1;
   font-weight: 800;
 }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  position: relative;
+  padding-left: 1em;
+}
+
 h1 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -26,7 +32,7 @@ h4 {
   font-size: 18px;
 }
 a {
-  color: #404040;
+  color: #2b79c3;
 }
 a:hover,
 a:focus {
@@ -41,14 +47,13 @@ article {
 }
 blockquote {
   color: #808080;
-  font-style: italic;
   font-size: 0.95em;
   margin: 20px 0 20px;
 }
 blockquote p {
   margin: 0;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   select {
     -webkit-appearance: none;
     margin-top: 15px;
@@ -74,8 +79,12 @@ hr.small {
     width: 500px;
   }
 }
+
+.post-container {
+  background: rgba(221, 221, 221, 0.10);
+}
 .post-container a {
-  color: #2B4180;
+  color: #2b79c3;
 }
 .post-container a:hover,
 .post-container a:focus {
@@ -292,7 +301,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0666C5;
+  color: #2b79c3;
 }
 .post-preview > a > .post-title {
   font-size: 21px;
@@ -319,7 +328,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #2B4180;
+  color: #2b79c3;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -428,7 +437,7 @@ footer .copyright a:focus {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #2B4180;
+  color: #2b79c3;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
