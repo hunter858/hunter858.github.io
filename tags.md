@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Tags"
+title: "博客标签"
 description: "我的博客基因库"  
-header-img: "img/orange.jpg"  
+header-img: "img/input.jpg"  
 ---
 
 ## 本页使用方法

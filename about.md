@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "About"
-description: "学苟知本，六经皆我注脚 "
-header-img: "img/orange.jpg"
+title: "About Me"
+description: " "
+header-img: "img/androd.jpg"
 ---
 
 
