@@ -28,7 +28,7 @@ description:
 
 下一步，新建一个一个与这个html同一目录下的js文件script.js,添加如下代码
 
-```
+  
 复制代码
 	var leftContent = document.getElementById('content_left');//获取id为content_left标签
 		
@@ -50,7 +50,7 @@ description:
 	
 	document.body.innerHTML = string;//添加新内容
 
-```
+  
 复制代码
  
 
@@ -58,15 +58,15 @@ description:
 
 重头戏准备来了，接下新建一个Xcode的singleViewApplication程序，在Main.storyboard拖一个UIWebView，并让控制器引用它，并把刚刚写好的script.js文件添加到工程中，如图所示:
    
-```
+  
 	<script src="script.js"></script>
-```
+  
  
 
 在ViewController.m添加如下代码，
 
 复制代码
-```
+  
 
 	#import "ViewController.h"
 	#import "BaiduModel.h"
@@ -170,7 +170,7 @@ description:
 	
 	@end
 
-```
+  
 复制代码
 
 当然你也可以生成html字符串，拷贝到html文件中，代码如下:
