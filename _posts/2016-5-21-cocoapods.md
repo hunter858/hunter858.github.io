@@ -3,7 +3,7 @@ layout: post
 title: CocoaPods简单使用
 date: 2015-3-02
 categories: blog
-tags: [web,VUE]
+tags: [ios,cocoapods]
 description: 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: git之sourceTree使用
-date: 2015-3-22
+title: git 之sourceTree使用
+date: 2014-10-1
 categories: blog
 tags: git
 description: 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: git基础命令
-date: 2015-3-12
+title: git 常用命令整理
+date: 2014-10-15
 categories: blog
-tags: 
+tags: git
 description: 
 ---
 
