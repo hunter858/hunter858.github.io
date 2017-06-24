@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "博客标签"
+title: "标签"
 description: "我的博客基因库"  
 header-img: "img/input.jpg"  
 ---

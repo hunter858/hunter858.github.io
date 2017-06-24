@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About Me"
+title: "关于我"
 description: " "
 header-img: "img/androd.jpg"
 ---
