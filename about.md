@@ -7,7 +7,7 @@ header-img: "img/androd.jpg"
 
 
 <center>
-    <p><img src="http://ooynqqqkg.bkt.clouddn.com/profile.png" align="center"></p>
+    <p><img src="http://opevtrwe5.bkt.clouddn.com/F93108FD5E26610BDB1935921B6D44AD.jpg" align="center"></p>
 </center>
 
 我是彭超，普通的ios开发工程师，兼web前端开发；
