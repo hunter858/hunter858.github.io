@@ -15,6 +15,7 @@ header-img: "img/androd.jpg"
 
 ### 最近在忙什么？
 
+* 2017-07 春秋App维护更新工作
 * 2017-05 react 学习
 * 2017-01 托马斯库克项目。
 * 2016-05 个人博客、及以往学习资料汇总。
@@ -34,8 +35,8 @@ header-img: "img/androd.jpg"
 
 ## 输出之地
 
-- [博客：读立写生]()
-- [通讯：卡片创作通讯]()
+- [博客：读立写生](http://www.pengchao.tech)
+- [简书：简书个人主页](http://www.jianshu.com/u/fedc670d567d)
 
 
 ### 联系
