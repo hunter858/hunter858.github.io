@@ -30,10 +30,16 @@ description:
 哇：这么神奇，对，就是这么神奇；
 我们用的是第二种方式 `提取dSYM文件的符号表文件并上传`
 
+
+--------
+
 [官方给的工具链接](https://bugly.qq.com/v2/sdk?id=37f16cf0-2020-4e30-9e8d-0f7de59cfe94) 集成文档内有，我教你如何用就好；
 
 #### 1. 下载官方工具，放到了一个文件夹;
+
 #### 2. 找到线上 ipa 的 [dSYM]()；
+
+------
 >打开 xcode 的 `Window ` 的选项中的 `Organizer` 找到上次打包生成的 文件；如图
 
 ![](http://ooynqqqkg.bkt.clouddn.com/WX20170801-223755@2xstep3.png)
@@ -41,6 +47,8 @@ description:
 ![](http://ooynqqqkg.bkt.clouddn.com/WX20170801-223859@2xstep4.png)
 
 >如果你告诉我，你删了，或者找不到 dSYM 文件，小编只能告诉我，我也很无奈，下次记得备份每个版本的 dSYM ，不然就用 第一种方式上传 [dSYM]() 吧，省去很多麻烦；
+
+-------
 ##### 3. 打开 终端工具 键入命令：
     java -jar /Users/pengchao/Desktop/buglySymboliOS2/buglySymboliOS.jar -i /Users/pengchao/Desktop/test/SpringTour.app.dSYM -o 0801.zip
 
@@ -55,7 +63,7 @@ description:
 
 >生成zip 成功，在finder 搜索 [0801.zip]() ，然后到腾讯Bugly 的官网，找到那个发生闪退的bug ；
 
-
+------
 #### 4. 上传 zip 符号表
 ![](http://ooynqqqkg.bkt.clouddn.com/WX20170801-230312@2xstep8.png)
 
@@ -67,7 +75,7 @@ description:
 ![](http://ooynqqqkg.bkt.clouddn.com/WX20170801-225934@2xstep9.png)
 
 
-
+------
 ##### 5. 通过 提示信息 找错误代码；
 
 >根据提示一步步的找到了 `STHome2017ViewController viewDidLoad` 方法
@@ -78,6 +86,7 @@ description:
 >后来我仔细看了代码，发现可能是，我这个 `NSDictionary` 可能有了一个 `null ` 的值，才导致的闪退了，我写了一段模拟代码，果不其然发生了闪退现象，所以我加了个安全保护；
 下面展示一下我的 错误代码；
 
+------
 ##### 6. 修改前的代码
 
     self.topBannerOperation=[manager GETAndShowExceptionIfErr:JavaCMSHomeQueryContent parameters:@{@"cityId":([STConfig GetInstance].localCity.CityId),@"positionId":NullNumber([OnlineConfigurationManager sharedManager].localConfigurationmodel.landingPage.home.topCarousel.positionId)} success:^(AFHTTPRequestOperation *operation, id responseObject, id Response) {
@@ -106,6 +115,7 @@ description:
 	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 	        
 	dispatch_group_leave(weakself.group);
-	        
+
+-------	        
 提交修改，下个版本发布的时候，就不会出现闪退了，如果影响用户比较多，可以发临时更新；
 谢谢你查看我的文章；如有不足可以指出，谢谢🙏；
