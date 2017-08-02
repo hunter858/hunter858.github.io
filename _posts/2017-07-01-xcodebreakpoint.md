@@ -1,6 +1,10 @@
 ---
 layout: post
 title: xcode 断点小技巧
+date: 2017-08-02
+categories: blog
+tags: xcode
+description: 
 ---
 在你新接手了一个项目的时候，你一定是是从项目的 AppDelegate 看起，
 一行行，或者一个Control 一个 Control 的看起，直到整个项目都熟悉；

@@ -1,4 +1,15 @@
-ios开发模拟网路较差的环境
+---
+layout: post
+title: ios开发模拟网路较差的环境
+date: 2017-08-02
+categories: blog
+tags: ios
+description: 
+---
+
+
+
+
 
 在日常的开发中，有时候我们需要模拟网络不太好的情况
 xcode 给我们提供了这样一个工具，废话不多说，就是它，如图

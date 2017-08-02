@@ -1,3 +1,12 @@
+---
+layout: post
+title: NSUrlrequest 请求加cookie
+date: 2017-07-29
+categories: blog
+tags: cookie
+description: 
+---
+
 最近项目中碰到的需求是，在hybird 开发中，给H5 的请求加点cookie
 怎么调试，怎么塞，怎么验证呢；
 
