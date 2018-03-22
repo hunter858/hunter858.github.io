@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: ios 关键字assign、weak、strong、copy该怎么用
@@ -6,6 +7,8 @@ categories: blog
 tags:ios,weak,assign,strong,copy
 description: 
 ---
+
+ios 关键字assign、weak、strong、copy该怎么用
 
 在iOS开发中定义@property属性时，经常用到assign、weak、strong、copy等关键字。我们经常会考虑在何时应该使用哪个关键字，尤其是在面试的时候，经常会被问到这些关键字之间的区别，下面详细和大家探讨一下
 

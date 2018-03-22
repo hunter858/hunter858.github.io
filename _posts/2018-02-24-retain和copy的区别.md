@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: retain 和copy的区别
@@ -6,6 +7,10 @@ categories: blog
 tags:ios
 description: 
 ---
+
+
+retain 和copy的区别
+
 在ios开发中我们一般都这么定义：
 
 ```
