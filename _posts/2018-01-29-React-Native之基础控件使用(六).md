@@ -2,7 +2,7 @@
 ---
 layout: post
 title: React-Native 之基础控件使用 （六）
-date: 2018-01-26
+date: 2018-01-29
 categories: blog
 tags:ios, react-native
 description: 

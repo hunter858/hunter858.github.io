@@ -2,7 +2,7 @@
 ---
 layout: post
 title: react-native 之 调试指南（四）
-date: 2018-01-25
+date: 2018-01-27
 categories: blog
 tags:ios, react-native
 description: 
